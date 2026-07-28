@@ -1,0 +1,87 @@
+{
+  "app/page.js -> ../components/AboutDeveloper": {
+    "id": "app/page.js -> ../components/AboutDeveloper",
+    "files": [
+      "static/chunks/_app-pages-browser_components_AboutDeveloper_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/Amenities": {
+    "id": "app/page.js -> ../components/Amenities",
+    "files": [
+      "static/css/_app-pages-browser_components_Amenities_jsx.css",
+      "static/chunks/_app-pages-browser_components_Amenities_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/AosInit": {
+    "id": "app/page.js -> ../components/AosInit",
+    "files": [
+      "static/chunks/_app-pages-browser_components_AosInit_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/CarouselSection": {
+    "id": "app/page.js -> ../components/CarouselSection",
+    "files": [
+      "static/chunks/_app-pages-browser_components_CarouselSection_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/EnquireModal": {
+    "id": "app/page.js -> ../components/EnquireModal",
+    "files": [
+      "static/chunks/_app-pages-browser_components_EnquireModal_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/Footer": {
+    "id": "app/page.js -> ../components/Footer",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Footer_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/Gallery": {
+    "id": "app/page.js -> ../components/Gallery",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Gallery_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/Highlights": {
+    "id": "app/page.js -> ../components/Highlights",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Highlights_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/Location": {
+    "id": "app/page.js -> ../components/Location",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Location_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/MasterPlan": {
+    "id": "app/page.js -> ../components/MasterPlan",
+    "files": [
+      "static/chunks/_app-pages-browser_components_MasterPlan_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/Overview": {
+    "id": "app/page.js -> ../components/Overview",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Overview_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/Pricing": {
+    "id": "app/page.js -> ../components/Pricing",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Pricing_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/Projects": {
+    "id": "app/page.js -> ../components/Projects",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Projects_jsx.js"
+    ]
+  },
+  "app/page.js -> ../components/QuickChat": {
+    "id": "app/page.js -> ../components/QuickChat",
+    "files": [
+      "static/chunks/_app-pages-browser_components_QuickChat_jsx.js"
+    ]
+  }
+}
