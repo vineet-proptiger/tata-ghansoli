@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://pragnyaedenpark.co.in/sitemap.xml',
+    sitemap: 'https://tataorbis.co.in/sitemap.xml',
   }
 }

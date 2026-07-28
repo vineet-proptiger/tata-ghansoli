@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://pragnyaedenpark.co.in'
+  const baseUrl = 'https://tataorbis.co.in'
   return [
     {
       url: baseUrl,

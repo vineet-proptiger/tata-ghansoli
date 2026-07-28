@@ -378,22 +378,22 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Main Heading */}
         <h1 className="hero-title">
-         PRAGNYA EDEN PARK
+         TATA ORBIS
         </h1>
 
         {/* Subtitle */}
         <p className="hero-subtitle">
-          <span style={{ fontSize: '0.9em', fontWeight: 600, textTransform: 'none', color: '#fff' }}>Siruseri, Chennai</span>
+          <span style={{ fontSize: '0.9em', fontWeight: 600, textTransform: 'none', color: '#fff' }}>At Ghansoli, Navi Mumbai By Tata Housing</span>
         </p>
         
         {/* Bullet Points */}
         <div className="hero-bullets" style={{ marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
           {[
-            '92-Acres Integrated Township Project',
-            '2 & 3 BHK In Premium 18-Floor Towers',
-            'India\'s First Future-Ready Sports Hub',
-            'Experience 8 Homes Per Floor Exclusivity',
-            'PSBB School, SIPCOT & Metro Access'
+            '47.5 Acres Landmark Integrated Development',
+            'Luxury 2, 3 BHK & Jodi In G+36 Floors Towers',
+            'BEE 4-Star Approved Residential & Commercial',
+            'Featuring A 3-Level Clubhouse & Taj Hotel',
+            'Olympic-Size Pool & Grand Entrance Lobby'
           ].map((text, i) => (
           <div key={i} className="hero-bullet-item" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand, #C9A96E)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, backgroundColor: '#fff', borderRadius: '50%', padding: '2px' }}>
@@ -408,12 +408,12 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Price Line */}
         <p className="hero-price-line" style={{ marginBottom: '0px' }}>
-          Premium 2 &amp; 3 BHK Luxury Residences
+          Luxury 2, 3 BHK &amp; Jodi Residences
           <span style={{ marginLeft: '6px', marginRight: '6px' }}>
             Price Starts
           </span>
           <span className="hero-price-amt" style={{ fontSize: 'clamp(18px, 2vw, 24px)', lineHeight: '1', verticalAlign: 'baseline' }}>
-            ₹ 64 Lakhs*
+            ₹ 1.75 Cr*
           </span>
         </p>
 

@@ -160,13 +160,13 @@ const Projects = ({ setIsOpen }) => {
           </p> */}
         </div>
 
-        {/* Project 1: Pragnya - Daffodils Tower */}
+        {/* Project 1: Tata Orbis Residential */}
         <div className="project-card-wrap flex flex-col lg:flex-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           {/* Image Side (Left on Desktop) */}
           <div className="w-full lg:w-1/2 project-img-container">
             <Image
               src="/projects/daffodils-tower.jpg"
-              alt="Pragnya - Daffodils Tower"
+              alt="Tata Orbis - Residential Towers"
               width={700}
               height={550}
               className="project-img"
@@ -177,9 +177,9 @@ const Projects = ({ setIsOpen }) => {
 
           {/* Text Side (Right on Desktop) */}
           <div className="w-full lg:w-1/2 project-content-box">
-            <h3 className="project-title">PRAGNYA- DAFFODILS TOWER</h3>
+            <h3 className="project-title">TATA ORBIS - RESIDENTIAL TOWERS</h3>
             <p className="project-desc">
-              Pragnya Eden Park Siruseri, is an integrated township located in the heart of OMR. Spread over 92 acres, this green-haven is both pollution-free and replete with potable water. Home to the prestigious PSBB School, Pragnya Eden Park also boasts of a first-of-its-kind sports facility with - gym, skating, futsal, cricket and more. Other highlights include - a well stocked supermarket, salon, creche and Apollo Health Clinic.
+              The residential phase of Tata Orbis in Ghansoli, Navi Mumbai features 7 iconic G+36 towers offering luxury 2 BHK, 3 BHK, and Jodi residences. Designed for low-density exclusivity with breathtaking panoramic views and abundant natural light, each apartment is crafted with top-tier specifications. Residents enjoy seamless access to a magnificently engineered 3-level clubhouse, landscaped community gardens, an Olympic-size swimming pool, high-speed elevators, and premier sport facilities.
             </p>
             <button
               className="explore-btn"
@@ -190,13 +190,13 @@ const Projects = ({ setIsOpen }) => {
           </div>
         </div>
 
-        {/* Project 2: Pragnya - Iris Tower */}
+        {/* Project 2: Tata Orbis Commercial & Taj Hotel */}
         <div className="project-card-wrap flex flex-col lg:flex-row-reverse mb-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           {/* Image Side (Right on Desktop) */}
           <div className="w-full lg:w-1/2 project-img-container">
             <Image
               src="/projects/iris-tower.jpg"
-              alt="Pragnya - Iris Tower"
+              alt="Tata Orbis - Commercial & Taj Hotel"
               width={700}
               height={550}
               className="project-img"
@@ -207,9 +207,9 @@ const Projects = ({ setIsOpen }) => {
 
           {/* Text Side (Left on Desktop) */}
           <div className="w-full lg:w-1/2 project-content-box">
-            <h3 className="project-title">PRAGNYA- IRIS TOWER</h3>
+            <h3 className="project-title">TATA ORBIS - COMMERCIAL &amp; TAJ HOTEL</h3>
             <p className="project-desc">
-              Pragnya Edenverse Siruseri, is an integrated township located in the heart of OMR. Spread over 92 acres, this green-haven is both pollution-free and replete with potable water. Home to the prestigious PSBB School, Pragnya Eden Park also boasts of a first-of-its-kind sports facility with - gym, skating, futsal, cricket and more. Other highlights include - a well stocked supermarket, salon, creche and Apollo Health Clinic.
+              Complementing the luxury residential towers is the landmark commercial and hospitality phase of Tata Orbis, featuring 8 state-of-the-art towers with expansive office spaces and the ultra-luxurious Taj Hotel. Designed as a BEE 4-star approved development, it elevates workplace and hospitality standards with grand entrance lobbies, ample multi-level parking, world-class retail centers, and effortless connectivity to Ghansoli Station and major IT hubs.
             </p>
             <button
               className="explore-btn"

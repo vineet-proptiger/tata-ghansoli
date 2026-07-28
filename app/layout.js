@@ -42,23 +42,23 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://pragnyaedenpark.co.in'),
-  title: 'Pragnya Eden Park | Premium 2 & 3 BHK Homes in Siruseri, Chennai',
-  description: "Pragnya Eden Park — OMR Chennai's premier integrated residential township in Siruseri. Premium 2 & 3 BHK luxury residences spread over 92 acres. Designed for elevated living.",
+  metadataBase: new URL('https://tataorbis.co.in'),
+  title: 'Tata Orbis | Luxury 2, 3 BHK & Jodi Homes in Ghansoli, Navi Mumbai',
+  description: "Tata Orbis — A thoughtfully planned 47.5-acre landmark development in Ghansoli, Navi Mumbai by Tata Housing. Luxury 2 BHK, 3 BHK, and Jodi apartments in iconic G+36 towers.",
   alternates: {
-    canonical: 'https://pragnyaedenpark.co.in',
+    canonical: 'https://tataorbis.co.in',
   },
   openGraph: {
-    title: 'Pragnya Eden Park | Luxury Integrated Township in Siruseri',
-    description: "Discover luxury 2 & 3 BHK apartments in Pragnya Eden Park, an integrated 92-acre township in Siruseri OMR Chennai.",
-    url: 'https://pragnyaedenpark.co.in',
-    siteName: 'Pragnya Eden Park',
+    title: 'Tata Orbis | Luxury Integrated Development in Ghansoli',
+    description: "Discover luxury 2, 3 BHK & Jodi apartments at Tata Orbis, an integrated 47.5-acre landmark development in Ghansoli, Navi Mumbai.",
+    url: 'https://tataorbis.co.in',
+    siteName: 'Tata Orbis',
     images: [
       {
         url: '/projects/iris-tower.jpg',
         width: 1200,
         height: 630,
-        alt: 'Pragnya Eden Park Siruseri Chennai',
+        alt: 'Tata Orbis Ghansoli Navi Mumbai',
       },
     ],
     locale: 'en_IN',
@@ -66,8 +66,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pragnya Eden Park | Premium 2 & 3 BHK Homes in Siruseri',
-    description: "OMR Chennai's premier integrated residential township in Siruseri.",
+    title: 'Tata Orbis | Luxury 2, 3 BHK & Jodi Homes in Ghansoli',
+    description: "A thoughtfully planned 47.5-acre landmark development in Ghansoli, Navi Mumbai by Tata Housing.",
     images: ['/projects/iris-tower.jpg'],
   },
 }
@@ -86,23 +86,23 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "RealEstateAgent",
-              "name": "Pragnya Eden Park Siruseri",
-              "url": "https://pragnyaedenpark.co.in",
-              "logo": "https://pragnyaedenpark.co.in/projects/iris-tower.jpg",
-              "image": "https://pragnyaedenpark.co.in/projects/iris-tower.jpg",
-              "description": "Pragnya Eden Park, OMR Chennai's premier luxury integrated township in Siruseri offering 2 & 3 BHK premium residences.",
+              "name": "Tata Orbis Ghansoli",
+              "url": "https://tataorbis.co.in",
+              "logo": "https://tataorbis.co.in/projects/iris-tower.jpg",
+              "image": "https://tataorbis.co.in/projects/iris-tower.jpg",
+              "description": "Tata Orbis, Navi Mumbai's premier luxury integrated development in Ghansoli offering 2, 3 BHK & Jodi luxury residences.",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Eden Park, Siruseri SIPCOT IT Park Road, OMR",
-                "addressLocality": "Chennai",
-                "addressRegion": "Tamil Nadu",
-                "postalCode": "603103",
+                "streetAddress": "Ghansoli",
+                "addressLocality": "Navi Mumbai",
+                "addressRegion": "Maharashtra",
+                "postalCode": "400701",
                 "addressCountry": "IN"
               },
               "telephone": "+919718344024",
-              "priceRange": "₹60 Lakhs - ₹1.25 Cr",
+              "priceRange": "₹ 1.75 Cr Onwards",
               "sameAs": [
-                "https://pragnyaedenpark.co.in"
+                "https://tataorbis.co.in"
               ]
             })
           }}

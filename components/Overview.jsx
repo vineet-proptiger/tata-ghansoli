@@ -145,7 +145,7 @@ const Overview = ({ setIsOpen }) => {
             </div>
             
             <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" style={{ fontSize: '16px', fontFamily: '"Poppins", sans-serif', color: '#333', textAlign: 'justify', marginBottom: '20px', lineHeight: '1.8' }}>
-              Pragnya Eden Park, Siruseri is a 92-acre integrated township in the heart of OMR, offering lush green landscapes, rich foliage and a pollution-free environment. Home to the prestigious PSBB School, it features India&apos;s first next-generation sports hub with cricket, futsal, skating, gym and more. Enjoy everyday convenience with an in-house supermarket, salon, cr&egrave;che and Apollo Health Clinic, all strategically located beside SIPCOT IT Park with seamless metro connectivity.
+              TATA Orbis is a thoughtfully planned development in Ghansoli, Navi Mumbai. This entire development is BEE 4-star approved and divided into 3 parts: residential, commercial, and hospitality projects. The commercial phase of the project comprises 8 iconic towers with expansive office spaces, while the residential phase features 7 iconic towers with luxury 2 BHK, 3 BHK, and Jodi apartments. The hospitality project introduces the Taj Hotel. Exceptionally designed, curated amenities of this landmark include a 3-level clubhouse, landscaped gardens, olympic-size swimming pool, children&apos;s play area, gymnasium, indoor games area, multipurpose court, drive pathway, grand entrance lobby, ample parking space, high-speed elevators, etc.
             </p>
             
             <p className="boldp" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" style={{ fontSize: '16px', fontFamily: '"Poppins", sans-serif', fontWeight: '700', color: '#333', marginBottom: '40px' }}>
@@ -160,12 +160,12 @@ const Overview = ({ setIsOpen }) => {
               data-aos-delay="200"
             >
               <div className="w-full md:w-1/2 p-4 md:p-5 border-b md:border-b-0 md:border-r border-[#d3be8a] flex flex-col justify-center">
-                <p style={{ color: '#999', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '6px' }}>Township Area:</p>
-                <h3 style={{ color: '#000', fontSize: '15px', fontWeight: '700', textTransform: 'uppercase' }}>92 ACRE INTEGRATED<br/>GREEN TOWNSHIP</h3>
+                <p style={{ color: '#999', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '6px' }}>Land Parcel:</p>
+                <h3 style={{ color: '#000', fontSize: '15px', fontWeight: '700', textTransform: 'uppercase' }}>47.5 ACRES INTEGRATED<br/>LANDMARK DEVELOPMENT</h3>
               </div>
               <div className="w-full md:w-1/2 p-4 md:p-5 flex flex-col justify-center">
-                <p style={{ color: '#999', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '6px' }}>Project Size &amp; Status:</p>
-                <h3 style={{ color: '#000', fontSize: '15px', fontWeight: '700', textTransform: 'uppercase' }}>14 ACRES RESIDENTIAL<br/>UNDER CONSTRUCTION (G+20)</h3>
+                <p style={{ color: '#999', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '6px' }}>Towers &amp; Elevation:</p>
+                <h3 style={{ color: '#000', fontSize: '15px', fontWeight: '700', textTransform: 'uppercase' }}>7 RESIDENTIAL TOWERS<br/>ICONIC G+36 FLOORS</h3>
               </div>
             </div>
 
@@ -177,7 +177,7 @@ const Overview = ({ setIsOpen }) => {
           <div className="image_caption_wrap relative">
             <img 
               src={overviewImage} 
-              alt="Pragnya Eden Park Overview" 
+              alt="Tata Orbis Overview" 
               className="w-full h-auto rounded-xl shadow-2xl max-w-[550px] lg:max-w-none mx-auto object-cover"
             />
           </div>

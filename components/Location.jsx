@@ -16,79 +16,53 @@ const locationCategories = [
     category: 'CONNECTIVITY',
     icon: MapPinned,
     items: [
-      { name: 'MTC Bus Stop', dist: 'Walkable' },
-      { name: 'Metro Phase I', dist: '1 Km' },
+      { name: 'Ghansoli Railway Station', dist: '2 Mins' },
+      { name: 'Thane-Belapur Road', dist: '1 Km' },
+      { name: 'Eastern Freeway / Atal Setu', dist: '15 Mins' },
+      { name: 'Navi Mumbai International Airport', dist: '25 Mins' },
     ],
   },
   {
     category: 'SCHOOLS',
     icon: BookOpen,
     items: [
-      { name: 'PSBB School within Township', dist: 'On Campus' },
-      { name: "St. John's Public School", dist: '4 Km' },
-      { name: 'Vels Vidyashram', dist: '4 Km' },
-      { name: 'Mount Litera Zee School', dist: '5 Km' },
-      { name: 'The School - KFI', dist: '5 Km' },
-      { name: 'KC High International School', dist: '5 Km' },
-      { name: 'Velammal New Gen', dist: '5 Km' },
-      { name: 'Gateway International School', dist: '6 Km' },
-      { name: 'Chettinad Sarvalokaa Education International School', dist: '6 Km' },
-      { name: 'Amethyst International School', dist: '7 Km' },
-      { name: "Shraddha Children's Academy", dist: '7 Km' },
-      { name: 'Hindustan International School', dist: '7 Km' },
-      { name: 'Vijay Vidhyashram', dist: '7 Km' },
+      { name: 'Tilak International School', dist: '2 Km' },
+      { name: 'Ryan International School', dist: '4 Km' },
+      { name: 'DAV Public School', dist: '4.5 Km' },
+      { name: 'Euro School Airoli', dist: '5 Km' },
+      { name: 'Fr. Agnel Multipurpose School', dist: '7 Km' },
     ],
   },
   {
-    category: 'COLLEGES',
+    category: 'COLLEGES & HEALTHCARE',
     icon: GraduationCap,
     items: [
-      { name: 'Dr. Ambedkar Govt Law College', dist: '1 Km' },
-      { name: 'Chennai Mathematical Institute (CMI)', dist: '2 Km' },
-      { name: 'Mohamed Sathak A.J. College of Engineering', dist: '3 Km' },
-      { name: 'Hindustan Institute of Technology & Science', dist: '5 Km' },
-      { name: 'Chettinad Medical College', dist: '6 Km' },
-      { name: 'Jeppiaar College of Arts & Science', dist: '7 Km' },
-      { name: 'Sathyabama University', dist: '8 Km' },
-      { name: 'St. Joseph College', dist: '8 Km' },
-      { name: 'VIT Chennai', dist: '10 Km' },
-      { name: 'SSN College of Engineering', dist: '10 Km' },
+      { name: 'Reliance Hospital', dist: '2.5 Km' },
+      { name: 'Smt. Indira Gandhi College of Engineering', dist: '2 Km' },
+      { name: 'Padmashree Dr. D. Y. Patil University', dist: '6 Km' },
+      { name: 'NIFT Mumbai', dist: '6.5 Km' },
     ],
   },
   {
-    category: 'ENTERTAINMENT',
+    category: 'ENTERTAINMENT & SHOPPING',
     icon: ShoppingBag,
     items: [
-      { name: 'Novotel', dist: '3.5 Km' },
-      { name: 'INOX Cinemas', dist: '4 Km' },
-      { name: 'The Marina Mall', dist: '4 Km' },
-      { name: 'OMR Food Street', dist: '5 Km' },
-      { name: 'AGS Cinemas', dist: '5 Km' },
-      { name: 'Vivira Mall', dist: '5 Km' },
-      { name: 'Four Points', dist: '8 Km' },
+      { name: 'Reliance Corporate Park Retail', dist: '2 Km' },
+      { name: 'D-Mart Ghansoli', dist: '5 Mins' },
+      { name: 'Inorbit Mall Vashi', dist: '7 Km' },
+      { name: 'Nexus Seawoods Mall', dist: '12 Km' },
     ],
   },
   {
-    category: 'TOP IT HUBS',
+    category: 'TOP IT & BUSINESS HUBS',
     icon: Building2,
     items: [
-      { name: 'Airtel Data Center', dist: '1 Km' },
-      { name: 'Atos Syntel', dist: '2 Km' },
-      { name: 'Hexaware Technologies', dist: '2 Km' },
-      { name: 'Capgemini', dist: '2 Km' },
-      { name: 'TCS', dist: '2 Km' },
-      { name: 'Cognizant Technology Solutions', dist: '2 Km' },
-      { name: 'AdaniConneX Data Center', dist: '3 Km' },
-      { name: 'Aspire Systems', dist: '3 Km' },
-      { name: 'Sify', dist: '3 Km' },
-      { name: 'Intellect', dist: '3 Km' },
-      { name: 'FSS', dist: '3 Km' },
-      { name: 'Pacifica Tech Park', dist: '4 Km' },
-      { name: 'Valeo', dist: '4 Km' },
-      { name: 'FLSmidth', dist: '4 Km' },
-      { name: 'ETA Technopark', dist: '5 Km' },
-      { name: 'HCL', dist: '6 Km' },
-      { name: 'Infosys', dist: '9 Km' },
+      { name: 'Reliance Corporate Park (RCP)', dist: '1.5 Km' },
+      { name: 'Millennium Business Park (MBP)', dist: '2 Km' },
+      { name: 'Airoli Knowledge Park', dist: '4 Km' },
+      { name: 'TCS Olympus Airoli', dist: '4.5 Km' },
+      { name: 'Mindspace Airoli', dist: '5 Km' },
+      { name: 'L&T Business Park', dist: '6 Km' },
     ],
   },
 ]
@@ -241,7 +215,7 @@ const Location = () => {
               background: '#EAE5DC'
             }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.2776245672117!2d80.20615800000002!3d12.8253282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525a1463efdf73%3A0xa7a8f060e3cf1a6c!2sEden%20Park!5e0!3m2!1sen!2sin!4v1785139902158!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6460113886544!2d72.9961!3d19.1171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1347076a5e1%3A0x6b4923e20e8b2cc1!2sGhansoli%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '420px', display: 'block', pointerEvents: 'none' }}
@@ -250,7 +224,7 @@ const Location = () => {
                 referrerPolicy="strict-origin-when-cross-origin"
               />
               <a 
-                href="https://www.google.com/maps/search/Pragnya+Eden+Park+Siruseri+Chennai/"
+                href="https://www.google.com/maps/search/Ghansoli+Navi+Mumbai+Tata/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{ position: 'absolute', inset: 0, zIndex: 5, cursor: 'pointer' }}
@@ -271,7 +245,7 @@ const Location = () => {
                   color: '#fff', fontSize: '11px', fontFamily: F_JOST,
                   fontWeight: '700', letterSpacing: '0.04em'
                 }}>
-                  Siruseri, OMR Chennai
+                  Ghansoli, Navi Mumbai
                 </span>
               </div>
             </div>

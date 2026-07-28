@@ -60,7 +60,7 @@ const Gallery = ({ setIsOpen }) => {
               className="text-[22px] sm:text-[28px] md:text-[36px] font-semibold leading-tight uppercase tracking-wider text-gray-900 text-center"
               style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif", margin: 0 }}
             >
-              PRAGNYA EDEN PARK GALLERY
+              TATA ORBIS GALLERY
             </h2>
           </div>
         </div>
@@ -102,7 +102,7 @@ const Gallery = ({ setIsOpen }) => {
                     textTransform: 'uppercase' 
                   }}
                 >
-                  {img.alt ? img.alt.replace('Pragnya Eden Park - ', '') : 'VIEW PREVIEW'}
+                  {img.alt ? img.alt.replace('Tata Orbis - ', '') : 'VIEW PREVIEW'}
                 </span>
               </div>
             </div>

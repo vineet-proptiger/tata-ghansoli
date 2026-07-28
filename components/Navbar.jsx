@@ -394,7 +394,7 @@ const Navbar = ({ setIsOpen }) => {
             
             <li className="navbar-logo">
               <a href="#" className="navbar-brand">
-                <img src={logoImages.tarc} alt="Pragnya Eden Park" className="nav-logo" />
+                <img src={logoImages.tarc} alt="Tata Orbis" className="nav-logo" />
               </a>
             </li>
             

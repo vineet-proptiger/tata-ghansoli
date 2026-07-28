@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
                 .privacy-logo { height: 40px; transform-origin: left center; }
               }
             `}</style>
-            <img src={logoImages.tarc} alt="Pragnya Eden Park" className="privacy-logo" />
+            <img src={logoImages.tarc} alt="Tata Orbis" className="privacy-logo" />
           </Link>
           <Link
             href="/"
@@ -98,7 +98,7 @@ export default function PrivacyPolicy() {
                 href="/"
                 style={{ color: 'var(--color-gold-dark)', fontWeight: '600' }}
               >
-                pragnyaedenpark.co.in
+                tataorbis.co.in
               </Link>{' '}
               (Authorized Marketing Partner), we respect your privacy and are committed to safeguarding your personal data. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website.
             </p>
@@ -309,7 +309,7 @@ export default function PrivacyPolicy() {
       {/* ── Footer (mini) ── */}
       <footer style={{ background: 'var(--color-dark)', color: '#fff', padding: '24px', textAlign: 'center', borderTop: '1px solid #333' }}>
         <p style={{ fontSize: '13px', color: '#888', fontFamily: 'var(--font-sans)' }}>
-          &copy; 2026 Pragnya Eden Park. All rights reserved |{' '}
+          &copy; 2026 Tata Orbis. All rights reserved |{' '}
           <Link href="/" style={{ color: 'var(--color-gold)', textDecoration: 'none' }}>Back to Home</Link>
         </p>
       </footer>

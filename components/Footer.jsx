@@ -20,26 +20,26 @@ const Footer = () => (
           About The Developer
         </h2>
         <p style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_JOST, fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '12px' }}>
-          Luxury Integrated Township — Siruseri, Chennai
+          Landmark Integrated Development — Ghansoli, Navi Mumbai
         </p>
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '24px' }}>
           <span style={{ width: '36px', height: '2.5px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px' }} />
         </div>
         <p style={{ fontSize: '15px', color: '#fff', fontFamily: 'var(--font-poppins), sans-serif', lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
           data-aos="fade-in" data-aos-delay="100">
-          Pragnya Eden Park is OMR Chennai&apos;s premier luxury residential township in Siruseri, offering premium 2 &amp; 3 BHK residences in an integrated 92-acre green haven. Thoughtfully curated amenities including on-campus PSBB School, exclusive sports facility, and Apollo Health Clinic — Pragnya Eden Park is designed for those who demand an elevated lifestyle.
+          Tata Housing presents Tata Orbis, Navi Mumbai&apos;s premier luxury residential and commercial landmark in Ghansoli, offering luxury 2, 3 BHK &amp; Jodi residences across an integrated 47.5-acre green development. Thoughtfully curated with BEE 4-star approval, an iconic 3-level clubhouse, the luxurious Taj Hotel, and world-class leisure amenities — Tata Orbis is engineered for those who seek an elevated lifestyle.
         </p>
         
         {/* RERA Block */}
         <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.05)', padding: '10px 24px', borderRadius: '4px', border: '1px solid rgba(255,255,255,0.1)' }}>
           <span style={{ fontFamily: F_SANS, fontSize: '14px', color: '#aaa' }}>RERA No :</span>
-          <strong style={{ fontFamily: F_JOST, fontSize: '15px', color: '#fff', letterSpacing: '0.04em' }}>TN/01/Building/0058/2017</strong>
+          <strong style={{ fontFamily: F_JOST, fontSize: '15px', color: '#fff', letterSpacing: '0.04em' }}>P51700000000 / Available on Request</strong>
         </div>
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 py-4 px-6 border-t border-[#222] text-center sm:text-left max-w-[1200px] mx-auto">
         <p style={{ fontSize: '13px', color: '#888', fontFamily: F_SANS }}>
-          &copy; 2026 Pragnya Eden Park. All rights reserved.
+          &copy; 2026 Tata Orbis. All rights reserved.
         </p>
         <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
           

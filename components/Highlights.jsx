@@ -127,8 +127,8 @@ const Highlights = () => {
                 <path d="M17 8C17 4.5 14.5 2 12 2S7 4.5 7 8c-2.5 0-4.5 2-4.5 4.5 0 2 1.5 3.5 3.5 3.5h12c2 0 3.5-1.5 3.5-3.5C21.5 10 19.5 8 17 8z"></path>
               </svg>
             </div>
-            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">92-ACRE TOWNSHIP</h3>
-            <p className="text-white/80 text-[14px] leading-relaxed">92 Acres Of Lush Greenery With Over 14,732 Plant Varieties</p>
+            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">47.5-ACRES DEVELOPMENT</h3>
+            <p className="text-white/80 text-[14px] leading-relaxed">Thoughtfully Planned Landmark Development Spread Over 47.5 Acres</p>
           </div>
 
           {/* Item 2 */}
@@ -149,8 +149,8 @@ const Highlights = () => {
                 <line x1="12" y1="18" x2="12" y2="22"></line>
               </svg>
             </div>
-            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">PREMIUM 2 &amp; 3 BHK</h3>
-            <p className="text-white/80 text-[14px] leading-relaxed">Luxury 2 &amp; 3 BHK Homes Built On 2 Stilt + 18 Floor Towers</p>
+            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">2, 3 BHK &amp; JODI HOMES</h3>
+            <p className="text-white/80 text-[14px] leading-relaxed">Luxury 2 BHK, 3 BHK, And Jodi Apartments Across 7 Iconic G+36 Towers</p>
           </div>
 
           {/* Item 3 */}
@@ -165,8 +165,8 @@ const Highlights = () => {
                 <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
               </svg>
             </div>
-            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">NEXT-GEN SPORTS HUB</h3>
-            <p className="text-white/80 text-[14px] leading-relaxed">Home To India&rsquo;s First Future-Ready Sports Experience</p>
+            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">3-LEVEL CLUBHOUSE</h3>
+            <p className="text-white/80 text-[14px] leading-relaxed">Exceptionally Designed 3-Level Clubhouse With Curated Amenities</p>
           </div>
 
           {/* Item 4 */}
@@ -177,8 +177,8 @@ const Highlights = () => {
                 <path d="M8 11l4-3 4 3v4h-8v-4z"></path>
               </svg>
             </div>
-            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">8 HOMES PER FLOOR</h3>
-            <p className="text-white/80 text-[14px] leading-relaxed">Low-Density Living With Enhanced Privacy &amp; Comfort</p>
+            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">BEE 4-STAR APPROVED</h3>
+            <p className="text-white/80 text-[14px] leading-relaxed">Entire Development Is BEE 4-Star Approved For Sustainable Living</p>
           </div>
 
           {/* Item 5 */}
@@ -189,8 +189,8 @@ const Highlights = () => {
                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
               </svg>
             </div>
-            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">PSBB &amp; SIPCOT HUB</h3>
-            <p className="text-white/80 text-[14px] leading-relaxed">PSBB School, IT Hub &amp; Metro Just Minutes Away</p>
+            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">TAJ HOTEL HOSPITALITY</h3>
+            <p className="text-white/80 text-[14px] leading-relaxed">Exclusive Hospitality Project Introducing The Luxurious Taj Hotel</p>
           </div>
 
           {/* Item 6 */}
@@ -204,8 +204,8 @@ const Highlights = () => {
                 <path d="M10 16h4"></path>
               </svg>
             </div>
-            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">WELLNESS &amp; RETAIL</h3>
-            <p className="text-white/80 text-[14px] leading-relaxed">Everyday Convenience With Apollo Clinic &amp; Retail Services</p>
+            <h3 className="text-[#d3be8a] font-bold text-[15px] uppercase tracking-wider mb-3">OLYMPIC-SIZE POOL &amp; MORE</h3>
+            <p className="text-white/80 text-[14px] leading-relaxed">Olympic-Size Pool, Gymnasium, Multipurpose Court &amp; Grand Entrance Lobby</p>
           </div>
 
         </div>

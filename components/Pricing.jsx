@@ -9,12 +9,12 @@ const units = [
     type: "2 BHK",
     subtitle: "RESIDENCES",
     size: "1110 Sq.Ft.",
-    price: "₹ 64 Lakhs*",
+    price: "₹ 1.75 Cr*",
     btnText: "GET DETAILS",
     features: [
       "Unlock Pricing & Floor Plans",
       "Attractive Payment Plan",
-      "Premium Integrated Township",
+      "47.5-Acre Landmark Development",
     ],
     isPopular: false,
   },
@@ -28,13 +28,13 @@ const units = [
     features: [
       "Unlock Pricing & Floor Plans",
       "Attractive Payment Plan",
-      "Premium Integrated Township",
+      "47.5-Acre Landmark Development",
     ],
     isPopular: true,
   },
   */
   {
-    type: "3 BHK",
+    type: "3 BHK & Jodi",
     subtitle: "RESIDENCES",
     size: "2210 Sq.Ft.",
     price: "Ask For Price",
@@ -42,7 +42,7 @@ const units = [
     features: [
       "Unlock Pricing & Floor Plans",
       "Attractive Payment Plan",
-      "Premium Integrated Township",
+      "47.5-Acre Landmark Development",
     ],
     isPopular: false,
   }
