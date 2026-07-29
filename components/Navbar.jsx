@@ -80,10 +80,10 @@ const Navbar = ({ setIsOpen }) => {
           justify-content: center;
           align-items: center;
           list-style-type: none;
-          width: 96% !important;
-          max-width: 1380px !important;
+          width: 97% !important;
+          max-width: 1440px !important;
           height: 78px !important;
-          padding: 0 15px;
+          padding: 0 38px !important;
           margin: 0 auto;
           background: rgba(15, 23, 42, 0.38) !important;
           backdrop-filter: blur(20px);
@@ -161,13 +161,13 @@ const Navbar = ({ setIsOpen }) => {
         .header_style2 .header_navigation2 li a,
         .header_style2.scrolled-up-expanded .header_navigation2 li a {
           color: #ffffff !important;
-          font-size: 14px;
-          padding: 0px 15px;
+          font-size: 13.5px !important;
+          padding: 0px 10px !important;
           line-height: 1.5em;
           text-decoration: none;
           font-family: var(--secondary_font);
           font-weight: 500 !important;
-          letter-spacing: 1.5px;
+          letter-spacing: 1.2px !important;
           text-transform: uppercase;
           white-space: nowrap;
           transition: color 0.3s ease;
@@ -185,10 +185,11 @@ const Navbar = ({ setIsOpen }) => {
           align-items: center;
           gap: 8px;
           background: transparent !important;
-          padding: 8px 18px;
+          padding: 7px 16px !important;
           border-radius: 50px;
           border: 1px solid rgba(255, 255, 255, 0.35) !important;
           color: #ffffff !important;
+          font-size: 13.5px !important;
           box-shadow: none !important;
         }
 
@@ -210,6 +211,38 @@ const Navbar = ({ setIsOpen }) => {
           object-fit: contain;
           transform: none !important;
           transition: none !important;
+        }
+
+        /* Responsive Safe-Zone for Standard Laptops (992px - 1280px) */
+        @media (min-width: 992px) and (max-width: 1280px) {
+          .header_style2 .header_navigation2,
+          .header_style2.scrolled-up-expanded .header_navigation2 {
+            width: 98% !important;
+            padding: 0 30px !important;
+          }
+          .header_style2 .header_navigation2 li a,
+          .header_style2.scrolled-up-expanded .header_navigation2 li a {
+            font-size: 12px !important;
+            padding: 0px 6px !important;
+            letter-spacing: 0.8px !important;
+          }
+          .header_style2 .header_navigation2 li a.phone-btn,
+          .header_style2.scrolled-up-expanded .header_navigation2 li a.phone-btn {
+            padding: 6px 12px !important;
+            font-size: 12px !important;
+          }
+          .header_style2 .header_navigation2 li.navbar-logo,
+          .header_style2.sticky .header_navigation2 li.navbar-logo,
+          .header_style2.scrolled-up-expanded .header_navigation2 li.navbar-logo {
+            min-width: 180px !important;
+            padding: 2px 14px !important;
+          }
+          .nav-logo,
+          .header_style2.sticky .nav-logo,
+          .header_style2.scrolled-up-expanded .nav-logo {
+            height: 52px !important;
+            min-height: 52px !important;
+          }
         }
 
         /* Reappear Full Navbar on Scroll Up (Smart Sticky Navbar) */
