@@ -64,8 +64,8 @@ const Location = () => {
                 color: '#000242',
                 letterSpacing: '0.04em',
                 textTransform: 'uppercase',
-                marginBottom: '16px',
-                paddingBottom: '12px',
+                marginBottom: '10px',
+                paddingBottom: '10px',
                 borderBottom: '2px solid #d5bd7e',
                 display: 'flex',
                 alignItems: 'center',
@@ -83,7 +83,7 @@ const Location = () => {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'space-between',
-                      padding: '11px 4px',
+                      padding: '7px 4px',
                       borderBottom: index === locationLandmarks.length - 1 ? 'none' : '1px solid rgba(213, 189, 126, 0.45)',
                       fontFamily: F_SANS,
                     }}
@@ -130,7 +130,7 @@ const Location = () => {
               width: '100%',
               height: '100%',
               position: 'relative',
-              background: '#0F172A',
+              background: '#0a0f1d',
               boxShadow: '0 12px 32px rgba(0, 2, 66, 0.12)',
               display: 'flex',
               alignItems: 'center',
@@ -145,18 +145,18 @@ const Location = () => {
                 .location-responsive-map {
                   width: 100%;
                   height: 100%;
-                  object-fit: cover;
+                  max-height: 100%;
+                  object-fit: contain;
                   display: block;
                   transition: transform 0.6s ease;
                 }
                 .location-responsive-map:hover {
-                  transform: scale(1.03);
+                  transform: scale(1.02);
                 }
                 @media (max-width: 1023px) {
                   .location-responsive-map {
                     height: auto !important;
-                    aspect-ratio: 16 / 11;
-                    object-fit: contain !important;
+                    aspect-ratio: 3 / 2;
                   }
                 }
               `}</style>
