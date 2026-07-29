@@ -34,7 +34,7 @@ const units = [
   },
   */
   {
-    type: "3 BHK & Jodi",
+    type: "3 BHK",
     subtitle: "RESIDENCES",
     size: "On Request",
     price: "Ask For Price",
