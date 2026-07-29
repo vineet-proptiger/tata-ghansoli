@@ -8,7 +8,7 @@ const units = [
   {
     type: "2 BHK",
     subtitle: "RESIDENCES",
-    size: "1110 Sq.Ft.",
+    size: "On Request",
     price: "₹ 1.75 Cr*",
     btnText: "GET DETAILS",
     features: [
@@ -36,7 +36,7 @@ const units = [
   {
     type: "3 BHK & Jodi",
     subtitle: "RESIDENCES",
-    size: "2210 Sq.Ft.",
+    size: "On Request",
     price: "Ask For Price",
     btnText: "GET DETAILS",
     features: [
