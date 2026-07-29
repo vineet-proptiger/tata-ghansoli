@@ -398,7 +398,7 @@ const Navbar = ({ setIsOpen }) => {
               </a>
             </li>
             
-            <li className="nav-item"><a href="#projects">Projects</a></li>
+            {/* <li className="nav-item"><a href="#projects">Projects</a></li> */}
             <li className="nav-item"><a href="#masterplan">Floor Plan</a></li>
             <li className="nav-item"><a href="#location">Location</a></li>
             <li className="nav-item"><a href="tel:9718344024" className="phone-btn"><Phone size={14}/> 9718344024</a></li>
@@ -426,7 +426,7 @@ const Navbar = ({ setIsOpen }) => {
             <li><a href="#highlights" onClick={() => setMobileOpen(false)}>Highlights</a></li>
             <li><a href="#gallery" onClick={() => setMobileOpen(false)}>Gallery</a></li>
             <li><a href="#amenities" onClick={() => setMobileOpen(false)}>Amenities</a></li>
-            <li><a href="#projects" onClick={() => setMobileOpen(false)}>Projects</a></li>
+            {/* <li><a href="#projects" onClick={() => setMobileOpen(false)}>Projects</a></li> */}
             <li><a href="#masterplan" onClick={() => setMobileOpen(false)}>Floor Plan</a></li>
             <li><a href="#location" onClick={() => setMobileOpen(false)}>Location</a></li>
             <li style={{ marginTop: '40px' }}>

@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 
 const Overview = dynamic(() => import('../components/Overview'), { ssr: true })
-const Projects = dynamic(() => import('../components/Projects'), { ssr: true })
+// const Projects = dynamic(() => import('../components/Projects'), { ssr: true })
 const Highlights = dynamic(() => import('../components/Highlights'), { ssr: true })
 const Amenities = dynamic(() => import('../components/Amenities'), { ssr: true })
 const Pricing = dynamic(() => import('../components/Pricing'), { ssr: true })
@@ -53,7 +53,7 @@ export default function Home() {
       <Pricing setIsOpen={setIsOpen} />
       <Highlights setIsOpen={setIsOpen} />
       {/* <Gallery setIsOpen={setIsOpen} /> */}
-      <Projects setIsOpen={setIsOpen} />
+      {/* <Projects setIsOpen={setIsOpen} /> */}
       <Location />
       {/* <Sustainability /> */}
       {/* <JapaneseExcellence /> */}
