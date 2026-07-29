@@ -1,5 +1,6 @@
 'use client'
 import { MapPin } from 'lucide-react'
+import { locationImage } from '../lib/images'
 
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
@@ -120,40 +121,52 @@ const Location = () => {
             </div>
           </div>
 
-          {/* LEFT — Google Map */}
-          <div className="w-full lg:flex-1 lg:order-1" data-aos="fade-right" data-aos-duration="1000" style={{ minHeight: '360px' }}>
+          {/* LEFT — Location Aerial Map Image */}
+          <div className="w-full lg:flex-1 lg:order-1 flex flex-col justify-center" data-aos="fade-right" data-aos-duration="1000">
             <div style={{
               overflow: 'hidden',
               border: '1px solid #D5C2A8',
               borderRadius: '16px',
-              height: '100%', 
-              minHeight: '360px',
+              width: '100%',
+              height: '100%',
               position: 'relative',
-              background: '#EAE5DC',
+              background: '#0F172A',
               boxShadow: '0 12px 32px rgba(0, 2, 66, 0.12)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6460113886544!2d72.9961!3d19.1171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1347076a5e1%3A0x6b4923e20e8b2cc1!2sGhansoli%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: '360px', display: 'block', pointerEvents: 'none' }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="strict-origin-when-cross-origin"
+              <img
+                src={locationImage}
+                alt="Tata Orbis Ghansoli Location & Connectivity Map"
+                className="location-responsive-map"
               />
-              <a 
-                href="https://www.google.com/maps/search/Ghansoli+Navi+Mumbai+Tata/"
-                target="_blank" 
-                rel="noopener noreferrer"
-                style={{ position: 'absolute', inset: 0, zIndex: 5, cursor: 'pointer' }}
-                title="Open in Google Maps"
-              />
+              <style jsx>{`
+                .location-responsive-map {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                  transition: transform 0.6s ease;
+                }
+                .location-responsive-map:hover {
+                  transform: scale(1.03);
+                }
+                @media (max-width: 1023px) {
+                  .location-responsive-map {
+                    height: auto !important;
+                    aspect-ratio: 16 / 11;
+                    object-fit: contain !important;
+                  }
+                }
+              `}</style>
               <div style={{
                 position: 'absolute', bottom: '16px', left: '16px', zIndex: 10,
                 background: 'var(--color-gold, #c9a96e)', opacity: 0.95, backdropFilter: 'blur(6px)',
                 borderRadius: '8px', padding: '6px 14px',
                 display: 'flex', alignItems: 'center', gap: '6px',
-                pointerEvents: 'none'
+                pointerEvents: 'none',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.25)'
               }}>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
                   stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

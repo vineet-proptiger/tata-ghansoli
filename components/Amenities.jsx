@@ -3,13 +3,13 @@ import React, { useEffect, useRef, useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { galleryImages } from '../lib/images'
+import { amenityImages } from '../lib/images'
 
 // Tripled array buffer guarantees React-Slick never runs out of clones and loops forward infinitely without ever rewinding back
-const extendedGallery = [...galleryImages, ...galleryImages, ...galleryImages]
-const amenitiesList = extendedGallery.map(item => ({
-  img: item.src,
-  title: item.title
+const extendedAmenities = [...amenityImages, ...amenityImages, ...amenityImages]
+const amenitiesList = extendedAmenities.map(item => ({
+  img: item.src || item.img,
+  title: item.title || item.label
 }))
 
 const Amenities = () => {

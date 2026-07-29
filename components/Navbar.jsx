@@ -165,7 +165,7 @@ const Navbar = ({ setIsOpen }) => {
         .nav-logo,
         .header_style2.sticky .nav-logo,
         .header_style2.scrolled-up-expanded .nav-logo {
-          height: 52px !important;
+          height: 72px !important;
           width: auto;
           display: block;
           object-fit: contain;
@@ -277,7 +277,7 @@ const Navbar = ({ setIsOpen }) => {
           .nav-logo,
           .header_style2.sticky .nav-logo,
           .header_style2.scrolled-up-expanded .nav-logo {
-            height: 42px !important;
+            height: 56px !important;
           }
           
           .mob_nav_trigger {

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { heroImages } from '../lib/images'
 
 const slides = [
-  { img: heroImages.placeholder },
+  { img: heroImages.banner },
   { img: heroImages.banner2 }
 ]
 
@@ -26,24 +26,15 @@ const Hero = ({ setIsOpen }) => {
           margin-top: 0px;
           height: auto;
           overflow: hidden;
-          background-image: url('/images/hero/placehoder.webp');
+          background-image: url('/images/hero/banner1.webp');
           background-size: cover;
           background-position: center;
           display: block;
         }
 
-        /* Dark gradient overlay — bottom heavy so text is legible */
+        /* Disable full-screen overlay since gradient is only behind text */
         .hero-overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(
-            to right,
-            rgba(0,0,0,0.72) 0%,
-            rgba(0,0,0,0.45) 55%,
-            rgba(0,0,0,0.10) 100%
-          );
-          z-index: 2;
-          pointer-events: none;
+          display: none;
         }
 
         /* Content block — sits over the image */
@@ -51,9 +42,17 @@ const Hero = ({ setIsOpen }) => {
           position: absolute;
           bottom: 0;
           left: 0;
-          right: 0;
           z-index: 10;
-          padding: 0 44px 72px;
+          padding: 100px 80px 72px 44px;
+          width: 100%;
+          max-width: 800px;
+          background: radial-gradient(
+            100% 100% at 0% 100%,
+            rgba(0,0,0,0.95) 0%,
+            rgba(0,0,0,0.7) 55%,
+            rgba(0,0,0,0.2) 75%,
+            transparent 90%
+          );
         }
 
         /* Main title */
@@ -153,8 +152,6 @@ const Hero = ({ setIsOpen }) => {
         }
 
         .hero-slider-wrapper {
-          position: absolute;
-          inset: 0;
           width: 100%;
           height: 100%;
         }
@@ -177,6 +174,18 @@ const Hero = ({ setIsOpen }) => {
           display: block;
         }
 
+        @keyframes heroZoomInOut {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.1); }
+          100% { transform: scale(1); }
+        }
+
+        .desktop-hero-image {
+          animation: heroZoomInOut 15s ease-in-out infinite;
+          transform-origin: center center;
+          will-change: transform;
+        }
+
         /* ─── Global Mobile/Tablet Margin to clear White Header ─── */
         @media (max-width: 991px) {
           .hero-container {
@@ -187,7 +196,7 @@ const Hero = ({ setIsOpen }) => {
         /* ─── Desktop ─── */
         @media (min-width: 1024px) {
           .hero-container {
-            aspect-ratio: 16/10;
+            aspect-ratio: 21/9;
           }
           .slide-layer {
             position: absolute;
@@ -220,45 +229,53 @@ const Hero = ({ setIsOpen }) => {
           background: #fff;
         }
 
-          .desktop-carousel { display: block; }
-          .mobile-hero-image { display: none; }
-
-          /* ─── Tablet ─── */
-          @media (min-width: 768px) and (max-width: 1023px) {
-            .hero-container {
-              aspect-ratio: 16/10;
-            }
-            .slide-layer {
-              position: absolute;
-              height: 100%;
-            }
-            .hero-image {
-              height: 100%;
-              object-fit: cover;
-              object-position: center 80%;
-            }
-            .hero-content {
-              padding: 0 28px 56px !important;
-            }
+        /* ─── Tablet ─── */
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .hero-container {
+            aspect-ratio: 16/7;
           }
+          .slide-layer {
+            position: absolute;
+            height: 100%;
+          }
+          .hero-image {
+            height: 100%;
+            object-fit: cover;
+            object-position: center 80%;
+          }
+          .hero-content {
+            padding: 0 28px 56px !important;
+          }
+        }
 
-          /* ─── Mobile ─── */
-          @media (max-width: 767px) {
-            .desktop-carousel { display: block !important; width: 100%; height: auto; }
-
-            .hero-container {
-              display: flex;
-              flex-direction: column;
-              aspect-ratio: auto;
-              background: #0F172A !important;
-              padding-top: 56px !important;
-            }
-            .hero-slider-wrapper {
-              position: relative;
-              width: 100%;
-              height: auto;
-              aspect-ratio: 16/9;
-            }
+        /* ─── Mobile ─── */
+        @media (max-width: 767px) {
+          .hero-container {
+            display: flex !important;
+            flex-direction: column !important;
+            height: auto !important;
+            aspect-ratio: auto;
+            background: #0F172A !important;
+            padding-top: 56px !important;
+          }
+          .hero-slider-wrapper {
+            position: relative;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+          }
+          .slide-layer {
+            position: absolute !important;
+            inset: 0 !important;
+            width: 100%;
+            height: 100%;
+          }
+          .hero-image {
+            height: 100% !important;
+            width: 100% !important;
+            object-fit: cover !important;
+            object-position: center !important;
+          }
             .hero-content {
               position: relative !important;
               background: #0F172A !important;
@@ -339,35 +356,28 @@ const Hero = ({ setIsOpen }) => {
             .hero-rera {
               font-size: 10px !important;
             }
-            .slide-layer {
-              position: absolute;
-              height: 100%;
-            }
-            .hero-image {
-              height: auto !important;
-              object-fit: contain !important;
-              object-position: top center !important;
-            }
           }
         `}} />
 
-      {/* ── Video Wrapper ── */}
-      <div className="hero-slider-wrapper desktop-carousel">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          onEnded={(e) => {
-            e.currentTarget.currentTime = 0;
-            e.currentTarget.play();
-          }}
-          poster={heroImages.placeholder}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-        >
-          <source src="/images/hero/video.mp4" type="video/mp4" />
-        </video>
+      {/* ── Responsive Image Carousel (All Devices) ── */}
+      <div className="hero-slider-wrapper grid">
+        {slides.map((slide, index) => (
+          <div 
+            key={index} 
+            className={`slide-layer ${index === currentSlide ? 'active' : ''}`}
+            style={{ gridArea: '1 / 1 / 2 / 2' }}
+          >
+            <Image
+              src={slide.img}
+              alt={`Tata Orbis Banner ${index + 1}`}
+              width={1920}
+              height={800}
+              className="hero-image desktop-hero-image"
+              priority={index === 0}
+              sizes="100vw"
+            />
+          </div>
+        ))}
       </div>
 
       {/* ── Dark overlay for text legibility ── */}
