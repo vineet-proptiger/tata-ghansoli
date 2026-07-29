@@ -408,7 +408,7 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Price Line */}
         <p className="hero-price-line" style={{ marginBottom: '0px' }}>
-          Luxury 2, 3 BHK &amp; Jodi Residences
+          Luxury 2, 3 BHK Residences
           <span style={{ marginLeft: '6px', marginRight: '6px' }}>
             Price Starts
           </span>
