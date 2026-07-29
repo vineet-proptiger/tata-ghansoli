@@ -7,8 +7,8 @@ const plans = [
     label: '2 BHK Residence', 
     img: masterplanImages.bhk2,
     details: {
-        size: '1100 Sq.Ft',
-        carpet: '749 Sq.Ft'
+        // size: '1100 Sq.Ft',
+        carpet: '751-770 SqFt'
     }
   },
   /*
@@ -26,8 +26,8 @@ const plans = [
     label: '3 BHK Residence', 
     img: masterplanImages.bhk45,
     details: {
-        size: '2210 Sq.Ft',
-        carpet: '1547 Sq.Ft'
+        // size: '2210 Sq.Ft',
+        carpet: '970-1165 SqFt'
     }
   },
 ]
@@ -106,7 +106,6 @@ const MasterPlan = ({ setIsOpen }) => {
                   </a>
                   <div className="p-6 text-center border-t border-gray-100 bg-white">
                     <h4 className="text-[22px] text-[#000242] font-semibold mb-4">{plan.label}</h4>
-                    <p className="text-[15px] text-gray-600 mb-2.5"><span className="font-semibold text-gray-800">Size </span>: {plan.details.size}</p>
                     <p className="text-[15px] text-gray-600"><span className="font-semibold text-gray-800">Carpet Area </span>: {plan.details.carpet}</p>
                   </div>
                 </div>
