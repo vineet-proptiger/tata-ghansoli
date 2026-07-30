@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://tataorbis.co.in'
+  const baseUrl = 'https://tatarealtyghansoli.co.in'
   return [
     {
       url: baseUrl,

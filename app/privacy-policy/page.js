@@ -98,7 +98,7 @@ export default function PrivacyPolicy() {
                 href="/"
                 style={{ color: 'var(--color-gold-dark)', fontWeight: '600' }}
               >
-                tataorbis.co.in
+                tatarealtyghansoli.co.in
               </Link>{' '}
               (Authorized Marketing Partner), we respect your privacy and are committed to safeguarding your personal data. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website.
             </p>

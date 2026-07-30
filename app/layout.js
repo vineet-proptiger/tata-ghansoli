@@ -42,16 +42,16 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://tataorbis.co.in'),
+  metadataBase: new URL('https://tatarealtyghansoli.co.in'),
   title: 'Tata Orbis | Luxury 2, 3 BHK & Jodi Homes in Ghansoli, Navi Mumbai',
   description: "Tata Orbis — A thoughtfully planned 47.5-acre landmark development in Ghansoli, Navi Mumbai by Tata Housing. Luxury 2 BHK, 3 BHK, and Jodi apartments in iconic G+36 towers.",
   alternates: {
-    canonical: 'https://tataorbis.co.in',
+    canonical: 'https://tatarealtyghansoli.co.in',
   },
   openGraph: {
     title: 'Tata Orbis | Luxury Integrated Development in Ghansoli',
     description: "Discover luxury 2, 3 BHK & Jodi apartments at Tata Orbis, an integrated 47.5-acre landmark development in Ghansoli, Navi Mumbai.",
-    url: 'https://tataorbis.co.in',
+    url: 'https://tatarealtyghansoli.co.in',
     siteName: 'Tata Orbis',
     images: [
       {
@@ -87,9 +87,9 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "RealEstateAgent",
               "name": "Tata Orbis Ghansoli",
-              "url": "https://tataorbis.co.in",
-              "logo": "https://tataorbis.co.in/projects/iris-tower.jpg",
-              "image": "https://tataorbis.co.in/projects/iris-tower.jpg",
+              "url": "https://tatarealtyghansoli.co.in",
+              "logo": "https://tatarealtyghansoli.co.in/projects/iris-tower.jpg",
+              "image": "https://tatarealtyghansoli.co.in/projects/iris-tower.jpg",
               "description": "Tata Orbis, Navi Mumbai's premier luxury integrated development in Ghansoli offering 2, 3 BHK & Jodi luxury residences.",
               "address": {
                 "@type": "PostalAddress",
@@ -102,7 +102,7 @@ export default function RootLayout({ children }) {
               "telephone": "+919718344024",
               "priceRange": "₹ 1.75 Cr Onwards",
               "sameAs": [
-                "https://tataorbis.co.in"
+                "https://tatarealtyghansoli.co.in"
               ]
             })
           }}

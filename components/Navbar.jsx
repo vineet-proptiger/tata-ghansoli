@@ -55,7 +55,7 @@ const Navbar = ({ setIsOpen }) => {
 
         .header_style2 {
           position: fixed;
-          top: 16px;
+          top: 4px;
           left: 0;
           width: 100%;
           z-index: 50;
@@ -77,13 +77,13 @@ const Navbar = ({ setIsOpen }) => {
         .header_style2 .header_navigation2,
         .header_style2.scrolled-up-expanded .header_navigation2 {
           display: flex;
-          justify-content: center;
+          justify-content: space-between !important;
           align-items: center;
           list-style-type: none;
-          width: 97% !important;
-          max-width: 1440px !important;
-          height: 78px !important;
-          padding: 0 38px !important;
+          width: 96% !important;
+          max-width: 1550px !important;
+          height: 64px !important;
+          padding: 0 40px !important;
           margin: 0 auto;
           background: rgba(15, 23, 42, 0.38) !important;
           backdrop-filter: blur(20px);
@@ -99,7 +99,7 @@ const Navbar = ({ setIsOpen }) => {
 
         .header_style2.sticky .header_navigation2 {
           width: 250px !important;
-          height: 66px !important;
+          height: 62px !important;
           border-radius: 12px !important;
           background: transparent !important;
           backdrop-filter: none !important;
@@ -115,8 +115,8 @@ const Navbar = ({ setIsOpen }) => {
 
         .header_style2 .header_navigation2 li.nav-item,
         .header_style2.scrolled-up-expanded .header_navigation2 li.nav-item {
-          flex: 0 1 auto !important;
-          max-width: 230px !important;
+          flex: 1 1 auto !important;
+          max-width: 350px !important;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -146,9 +146,9 @@ const Navbar = ({ setIsOpen }) => {
           opacity: 1 !important;
           flex: 0 0 auto !important;
           flex-shrink: 0 !important;
-          min-width: 220px !important;
+          min-width: 200px !important;
           background-color: #fff !important;
-          padding: 2px 22px !important;
+          padding: 2px 18px !important;
           border-radius: 12px !important;
           box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1) !important;
           margin: 0 !important;
@@ -185,7 +185,7 @@ const Navbar = ({ setIsOpen }) => {
           align-items: center;
           gap: 8px;
           background: transparent !important;
-          padding: 7px 16px !important;
+          padding: 6px 15px !important;
           border-radius: 50px;
           border: 1px solid rgba(255, 255, 255, 0.35) !important;
           color: #ffffff !important;
@@ -203,8 +203,8 @@ const Navbar = ({ setIsOpen }) => {
         .nav-logo,
         .header_style2.sticky .nav-logo,
         .header_style2.scrolled-up-expanded .nav-logo {
-          height: 62px !important;
-          min-height: 62px !important;
+          height: 52px !important;
+          min-height: 52px !important;
           width: auto !important;
           flex-shrink: 0 !important;
           display: block;
@@ -240,14 +240,80 @@ const Navbar = ({ setIsOpen }) => {
           .nav-logo,
           .header_style2.sticky .nav-logo,
           .header_style2.scrolled-up-expanded .nav-logo {
-            height: 52px !important;
-            min-height: 52px !important;
+            height: 48px !important;
+            min-height: 48px !important;
+          }
+        }
+
+        /* Responsive Scaling for Large Screens (1400px to 1679px) */
+        @media (min-width: 1400px) and (max-width: 1679px) {
+          .header_style2 .header_navigation2,
+          .header_style2.scrolled-up-expanded .header_navigation2 {
+            max-width: 1620px !important;
+            height: 70px !important;
+            padding: 0 45px !important;
+          }
+          .header_style2 .header_navigation2 li a,
+          .header_style2.scrolled-up-expanded .header_navigation2 li a {
+            font-size: 15px !important;
+            padding: 0px 14px !important;
+            letter-spacing: 1.4px !important;
+          }
+          .header_style2 .header_navigation2 li a.phone-btn,
+          .header_style2.scrolled-up-expanded .header_navigation2 li a.phone-btn {
+            padding: 8px 18px !important;
+            font-size: 15px !important;
+          }
+          .header_style2 .header_navigation2 li.navbar-logo,
+          .header_style2.sticky .header_navigation2 li.navbar-logo,
+          .header_style2.scrolled-up-expanded .header_navigation2 li.navbar-logo {
+            min-width: 220px !important;
+            padding: 3px 22px !important;
+          }
+          .nav-logo,
+          .header_style2.sticky .nav-logo,
+          .header_style2.scrolled-up-expanded .nav-logo {
+            height: 56px !important;
+            min-height: 56px !important;
+          }
+        }
+
+        /* Responsive Scaling for Ultra-Wide / 4K Screens (1680px and above) */
+        @media (min-width: 1680px) {
+          .header_style2 .header_navigation2,
+          .header_style2.scrolled-up-expanded .header_navigation2 {
+            max-width: 1840px !important;
+            height: 76px !important;
+            padding: 0 52px !important;
+          }
+          .header_style2 .header_navigation2 li a,
+          .header_style2.scrolled-up-expanded .header_navigation2 li a {
+            font-size: 16.5px !important;
+            padding: 0px 18px !important;
+            letter-spacing: 1.6px !important;
+          }
+          .header_style2 .header_navigation2 li a.phone-btn,
+          .header_style2.scrolled-up-expanded .header_navigation2 li a.phone-btn {
+            padding: 9px 22px !important;
+            font-size: 16.5px !important;
+          }
+          .header_style2 .header_navigation2 li.navbar-logo,
+          .header_style2.sticky .header_navigation2 li.navbar-logo,
+          .header_style2.scrolled-up-expanded .header_navigation2 li.navbar-logo {
+            min-width: 250px !important;
+            padding: 4px 26px !important;
+          }
+          .nav-logo,
+          .header_style2.sticky .nav-logo,
+          .header_style2.scrolled-up-expanded .nav-logo {
+            height: 62px !important;
+            min-height: 62px !important;
           }
         }
 
         /* Reappear Full Navbar on Scroll Up (Smart Sticky Navbar) */
         .header_style2.scrolled-up-expanded {
-          top: 16px;
+          top: 4px;
           background: transparent !important;
           box-shadow: none !important;
         }
