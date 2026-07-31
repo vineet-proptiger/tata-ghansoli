@@ -193,19 +193,48 @@ const Hero = ({ setIsOpen }) => {
           }
         }
 
-        /* ─── Desktop ─── */
+        /* ─── Desktop & Standard Monitors ─── */
         @media (min-width: 1024px) {
           .hero-container {
-            aspect-ratio: 21/9;
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            max-height: 1100px;
+          }
+          .hero-slider-wrapper {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
           }
           .slide-layer {
             position: absolute;
+            inset: 0;
+            width: 100%;
             height: 100%;
           }
           .hero-image {
+            width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center 80%;
+          }
+          .hero-content {
+            padding: 80px 80px 32px 48px !important;
+          }
+        }
+
+        /* ─── Compact Mini Laptops & Ultrabooks (e.g., ASUS VivoBook, 13-inch notebooks) ─── */
+        @media (min-width: 1024px) and (max-height: 720px) {
+          .hero-content {
+            padding: 70px 60px 20px 48px !important;
+          }
+          .hero-bullets {
+            margin-bottom: 14px !important;
+            gap: 6px !important;
+          }
+          .hero-price-line {
+            margin-bottom: 16px !important;
           }
         }
 
@@ -232,19 +261,30 @@ const Hero = ({ setIsOpen }) => {
         /* ─── Tablet ─── */
         @media (min-width: 768px) and (max-width: 1023px) {
           .hero-container {
-            aspect-ratio: 16/7;
+            width: 100%;
+            height: 75vh;
+            min-height: 550px;
+          }
+          .hero-slider-wrapper {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
           }
           .slide-layer {
             position: absolute;
+            inset: 0;
+            width: 100%;
             height: 100%;
           }
           .hero-image {
+            width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center 80%;
           }
           .hero-content {
-            padding: 0 28px 56px !important;
+            padding: 0 28px 46px !important;
           }
         }
 
