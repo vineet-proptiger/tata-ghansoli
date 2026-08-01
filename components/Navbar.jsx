@@ -403,8 +403,8 @@ const Navbar = ({ setIsOpen }) => {
           .nav-logo,
           .header_style2.sticky .nav-logo,
           .header_style2.scrolled-up-expanded .nav-logo {
-            height: 38px !important;
-            min-height: 38px !important;
+            height: 45px !important;
+            min-height: 45px !important;
             width: auto !important;
             display: block !important;
             opacity: 1 !important;
