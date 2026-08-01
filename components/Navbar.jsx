@@ -59,11 +59,11 @@ const Navbar = ({ setIsOpen }) => {
           left: 0;
           width: 100%;
           z-index: 50;
-          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: top 0.4s ease;
         }
 
         .header_style2.sticky {
-          top: 2px;
+          top: 4px;
         }
 
         .header_style2 .container-fluid {
@@ -91,14 +91,14 @@ const Navbar = ({ setIsOpen }) => {
           border: 1px solid rgba(255, 255, 255, 0.25);
           border-radius: 50px !important;
           box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25) !important;
-          transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
-                      border-radius 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+          transition: width 0.55s cubic-bezier(0.16, 1, 0.3, 1), 
+                      border-radius 0.55s cubic-bezier(0.16, 1, 0.3, 1),
                       background 0.4s ease,
                       box-shadow 0.4s ease;
         }
 
         .header_style2.sticky .header_navigation2 {
-          width: 250px !important;
+          width: 260px !important;
           height: 62px !important;
           border-radius: 12px !important;
           background: transparent !important;
@@ -108,27 +108,39 @@ const Navbar = ({ setIsOpen }) => {
           box-shadow: none !important;
           padding: 0 !important;
           margin: 0 auto;
-          transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
-                      border-radius 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+          justify-content: center !important;
+          overflow: hidden !important;
+          transition: width 0.55s cubic-bezier(0.16, 1, 0.3, 1), 
+                      border-radius 0.55s cubic-bezier(0.16, 1, 0.3, 1),
                       background 0.4s ease;
         }
 
         .header_style2 .header_navigation2 li.nav-item,
         .header_style2.scrolled-up-expanded .header_navigation2 li.nav-item {
-          flex: 1 1 auto !important;
+          flex: 1 1 0% !important;
           max-width: 350px !important;
           display: flex;
           justify-content: center;
           align-items: center;
-          overflow: visible !important;
+          overflow: hidden !important;
           opacity: 1 !important;
           visibility: visible;
           padding: 0 4px !important;
-          transition: max-width 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease, padding 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: max-width 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.08s, flex 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.08s, opacity 0.4s ease 0.12s, padding 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.08s;
         }
 
-        .header_style2.sticky .header_navigation2 li.nav-item {
-          flex: 0 1 auto !important;
+        .header_style2 .header_navigation2 li.nav-item:first-child,
+        .header_style2 .header_navigation2 li.nav-item:last-child,
+        .header_style2.scrolled-up-expanded .header_navigation2 li.nav-item:first-child,
+        .header_style2.scrolled-up-expanded .header_navigation2 li.nav-item:last-child {
+          flex: 1.5 1 0% !important;
+          max-width: 450px !important;
+        }
+
+        .header_style2.sticky .header_navigation2 li.nav-item,
+        .header_style2.sticky .header_navigation2 li.nav-item:first-child,
+        .header_style2.sticky .header_navigation2 li.nav-item:last-child {
+          flex: 0 1 0% !important;
           max-width: 0px !important;
           opacity: 0 !important;
           margin: 0 !important;
@@ -136,7 +148,7 @@ const Navbar = ({ setIsOpen }) => {
           pointer-events: none;
           visibility: hidden;
           overflow: hidden !important;
-          transition: max-width 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: opacity 0.2s ease 0s, max-width 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s, flex 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s, padding 0.3s ease 0s;
         }
 
         .header_style2 .header_navigation2 li.navbar-logo,
@@ -156,6 +168,8 @@ const Navbar = ({ setIsOpen }) => {
           display: flex !important;
           align-items: center !important;
           justify-content: center !important;
+          transform: translateZ(0) !important;
+          z-index: 20;
         }
 
         .header_style2 .header_navigation2 li a,
@@ -330,8 +344,16 @@ const Navbar = ({ setIsOpen }) => {
             padding: 12px 0 !important;
             background: #fff !important;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+            transition: none !important;
           }
           
+          .header_style2 .container-fluid {
+            justify-content: flex-start !important;
+            padding: 0 16px !important;
+            margin: 0 !important;
+            width: 100% !important;
+          }
+
           .header_style2 .header_navigation2 li.nav-item,
           .header_style2.sticky .header_navigation2 li.nav-item,
           .header_style2.scrolled-up-expanded .header_navigation2 li.nav-item {
@@ -353,12 +375,18 @@ const Navbar = ({ setIsOpen }) => {
             border: none !important;
             border-radius: 0 !important;
             justify-content: flex-start !important;
+            align-items: center !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            transition: none !important;
           }
           
           .header_style2 .header_navigation2 li.navbar-logo,
           .header_style2.sticky .header_navigation2 li.navbar-logo,
           .header_style2.scrolled-up-expanded .header_navigation2 li.navbar-logo {
             display: flex !important;
+            justify-content: flex-start !important;
+            align-items: center !important;
             opacity: 1 !important;
             visibility: visible !important;
             padding: 0 !important;
@@ -368,17 +396,22 @@ const Navbar = ({ setIsOpen }) => {
             border-radius: 0 !important;
             min-width: unset !important;
             flex: 0 0 auto !important;
+            transition: none !important;
+            transform: none !important;
           }
           
           .nav-logo,
           .header_style2.sticky .nav-logo,
           .header_style2.scrolled-up-expanded .nav-logo {
-            height: 52px !important;
-            min-height: 52px !important;
+            height: 38px !important;
+            min-height: 38px !important;
             width: auto !important;
             display: block !important;
             opacity: 1 !important;
             visibility: visible !important;
+            margin-left: 0 !important;
+            transition: none !important;
+            transform: none !important;
           }
           
           .mob_nav_trigger {
