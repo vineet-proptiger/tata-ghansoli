@@ -136,7 +136,7 @@ const Overview = ({ setIsOpen }) => {
         {/* Left Side: Text Content */}
         <div className="w-full lg:w-7/12 pr-0 lg:pr-8">
           <div className="inner-section" data-aos="fade-up" data-aos-duration="1000">
-            <h2 className="text-[22px] sm:text-[28px] md:text-[36px] font-semibold leading-tight uppercase tracking-wider text-gray-900" data-aos="fade-up" data-aos-duration="1000" style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif", marginBottom: '10px' }}>Overview</h2>
+            <h2 className="text-[22px] sm:text-[28px] md:text-[36px] font-semibold leading-tight uppercase tracking-wider text-gray-900" data-aos="fade-up" data-aos-duration="1000" style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif", marginBottom: '10px' }}>About TATA Orbis Ghansoli</h2>
             {/* Decorative Line */}
             <div className="flex items-center justify-start mt-2 mb-6" data-aos="fade-up" data-aos-duration="1000">
               <div className="w-16 h-[1px] bg-[#7d9b93]"></div>

@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
                 "addressCountry": "IN"
               },
               "telephone": "+919718344024",
-              "priceRange": "₹ 1.75 Cr Onwards",
+              "priceRange": "₹ 1.99 Cr Onwards",
               "sameAs": [
                 "https://tatarealtyghansoli.co.in"
               ]

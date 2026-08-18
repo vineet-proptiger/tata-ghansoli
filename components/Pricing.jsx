@@ -9,7 +9,7 @@ const units = [
     type: "2 BHK",
     subtitle: "RESIDENCES",
     size: "On Request",
-    price: "₹ 1.75 Cr*",
+    price: "₹ 1.99 Cr*",
     btnText: "GET DETAILS",
     features: [
       "Unlock Pricing & Floor Plans",

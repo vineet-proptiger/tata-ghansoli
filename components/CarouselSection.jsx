@@ -230,16 +230,6 @@ const CarouselSection = ({ setIsOpen, title = "Glimpses of Masterpiece", subtitl
                     >
                       {img.title || img.label}
                     </h3>
-                    <p 
-                      className="text-white/90 text-[11px] md:text-base leading-snug md:leading-relaxed max-w-2xl font-sans"
-                      style={{
-                        opacity: getRealIndex(idx) === getRealIndex(index) ? 1 : 0,
-                        transform: getRealIndex(idx) === getRealIndex(index) ? 'translateY(0)' : 'translateY(20px)',
-                        transition: 'all 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0.45s'
-                      }}
-                    >
-                      {img.desc}
-                    </p>
                     
                     {/* Progress Bar Container */}
                     <div className="absolute bottom-0 left-0 right-0 h-1 md:h-1.5 bg-white/20">

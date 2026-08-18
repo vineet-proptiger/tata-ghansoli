@@ -428,7 +428,7 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Main Heading */}
         <h1 className="hero-title">
-         TATA ORBIS
+         TATA GHANSOLI ORBIS
         </h1>
 
         {/* Subtitle */}
@@ -463,7 +463,7 @@ const Hero = ({ setIsOpen }) => {
             Price Starts
           </span>
           <span className="hero-price-amt" style={{ fontSize: 'clamp(18px, 2vw, 24px)', lineHeight: '1', verticalAlign: 'baseline' }}>
-            ₹ 1.75 Cr*
+            ₹ 1.99 Cr*
           </span>
         </p>
 
