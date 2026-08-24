@@ -75,7 +75,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                 <span className="text-[15px]">💳</span> Priority EOI Amount
               </span>
               <span className="text-[#c9a65a] font-bold text-[17px] tracking-wider" style={{ fontFamily: F_JOST }}>
-                ₹3 Lakhs <span className="text-white/80 font-normal text-[11px] tracking-normal ml-1">(2 & 3 BHK)</span>
+                ₹3 Lakhs* <span className="text-white/80 font-normal text-[11px] tracking-normal ml-1">(2 & 3 BHK)</span>
               </span>
             </div>
 

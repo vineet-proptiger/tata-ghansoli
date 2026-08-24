@@ -460,7 +460,7 @@ const Hero = ({ setIsOpen }) => {
         <div className="flex items-center gap-2 px-3 sm:px-4 py-2 mt-2 mb-6 rounded-lg border border-[#C9A96E]/60 bg-[#C9A96E]/20 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.4)] w-fit" style={{ transform: 'translateY(0)' }}>
           <span className="text-[16px] sm:text-[18px]">💳</span>
           <span className="text-white font-medium text-[13px] sm:text-[15px] tracking-wide" style={{ fontFamily: 'var(--font-jost), Montserrat, sans-serif' }}>
-            Priority EOI: <strong className="text-[#C9A96E] ml-1">₹3 Lakhs</strong> <span className="text-white/80 font-normal text-[11px] sm:text-[13px] ml-1">(2 & 3 BHK)</span>
+            Priority EOI: <strong className="text-[#C9A96E] ml-1">₹3 Lakhs*</strong> <span className="text-white/80 font-normal text-[11px] sm:text-[13px] ml-1">(2 & 3 BHK)</span>
           </span>
         </div>
 
