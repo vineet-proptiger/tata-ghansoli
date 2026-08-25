@@ -428,12 +428,12 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Main Heading */}
         <h1 className="hero-title">
-         TATA GHANSOLI ORBIS
+         TATA ORBIS GHANSOLI
         </h1>
 
         {/* Subtitle */}
         <p className="hero-subtitle">
-          <span style={{ fontSize: '0.9em', fontWeight: 600, textTransform: 'none', color: '#fff' }}>At Ghansoli, Navi Mumbai By Tata Housing</span>
+          <span style={{ fontSize: '0.9em', fontWeight: 600, textTransform: 'none', color: '#fff' }}>New Launch At Ghansoli, Navi Mumbai.</span>
         </p>
         
         {/* Bullet Points */}

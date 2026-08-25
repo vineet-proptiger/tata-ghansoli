@@ -136,20 +136,29 @@ const Overview = ({ setIsOpen }) => {
         {/* Left Side: Text Content */}
         <div className="w-full lg:w-7/12 pr-0 lg:pr-8">
           <div className="inner-section" data-aos="fade-up" data-aos-duration="1000">
-            <h2 className="text-[22px] sm:text-[28px] md:text-[36px] font-semibold leading-tight uppercase tracking-wider text-gray-900" data-aos="fade-up" data-aos-duration="1000" style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif", marginBottom: '10px' }}>About TATA Orbis Ghansoli</h2>
+            <h2 className="text-[22px] sm:text-[28px] md:text-[36px] font-semibold leading-tight uppercase tracking-wider text-gray-900" data-aos="fade-up" data-aos-duration="1000" style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif", marginBottom: '6px' }}>TATA Orbis</h2>
             {/* Decorative Line */}
-            <div className="flex items-center justify-start mt-2 mb-6" data-aos="fade-up" data-aos-duration="1000">
+            <div className="flex items-center justify-start mt-1 mb-3" data-aos="fade-up" data-aos-duration="1000">
               <div className="w-16 h-[1px] bg-[#7d9b93]"></div>
               <div className="w-2 h-2 rounded-full bg-[#7d9b93] mx-3"></div>
               <div className="w-16 h-[1px] bg-[#7d9b93]"></div>
             </div>
+            <h3 className="text-[16px] sm:text-[18px] md:text-[22px] font-medium tracking-wide text-gray-600" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif", marginBottom: '24px' }}>New Launch in Ghansoli, Navi Mumbai</h3>
             
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" style={{ fontSize: '16px', fontFamily: '"Poppins", sans-serif', color: '#333', textAlign: 'justify', marginBottom: '20px', lineHeight: '1.8' }}>
-              TATA Orbis is a thoughtfully planned development in Ghansoli, Navi Mumbai. This entire development is BEE 4-star approved and divided into 3 parts: residential, commercial, and hospitality projects. The commercial phase of the project comprises 8 iconic towers with expansive office spaces, while the residential phase features 7 iconic towers with luxury 2 BHK, 3 BHK, and Jodi apartments. The hospitality project introduces the Taj Hotel. Exceptionally designed, curated amenities of this landmark include a 3-level clubhouse, landscaped gardens, olympic-size swimming pool, children&apos;s play area, gymnasium, indoor games area, multipurpose court, drive pathway, grand entrance lobby, ample parking space, high-speed elevators, etc.
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" style={{ fontSize: '16px', fontFamily: '"Poppins", sans-serif', color: '#333', textAlign: 'justify', marginBottom: '8px', lineHeight: '1.8' }}>
+              TATA Orbis is a thoughtfully planned new launch in Ghansoli, Navi Mumbai, offering a landmark integrated development by Tata. The entire development is BEE 4-Star approved and thoughtfully divided into three distinct components: Residential, Commercial, and Hospitality.
             </p>
             
-            <p className="boldp" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" style={{ fontSize: '16px', fontFamily: '"Poppins", sans-serif', fontWeight: '700', color: '#333', marginBottom: '40px' }}>
-              Register Your Interest Today to Access Exclusive Offers, Pricing & Priority Unit Selection.
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="120" style={{ fontSize: '16px', fontFamily: '"Poppins", sans-serif', color: '#333', textAlign: 'justify', marginBottom: '8px', lineHeight: '1.8' }}>
+              The residential phase features 7 iconic towers offering luxury 2 BHK, 3 BHK, and Jodi apartments, designed for elevated urban living. The commercial phase comprises 8 iconic towers with expansive office spaces, creating a dynamic business destination. Adding to the development is a premium Taj Hotel, bringing world-class hospitality to the project.
+            </p>
+            
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="140" style={{ fontSize: '16px', fontFamily: '"Poppins", sans-serif', color: '#333', textAlign: 'justify', marginBottom: '20px', lineHeight: '1.8' }}>
+              Exceptionally designed amenities include a 3-level clubhouse, landscaped gardens, Olympic-size swimming pool, children&apos;s play area, gymnasium, indoor games area, multipurpose court, drive pathway, grand entrance lobby, ample parking, high-speed elevators, and more.
+            </p>
+            
+            <p className="boldp" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="160" style={{ fontSize: '16px', fontFamily: '"Poppins", sans-serif', fontWeight: '700', color: '#333', marginBottom: '40px' }}>
+              TATA Ghansoli New Launch, Navi Mumbai — Register Your Interest Today to access exclusive offers, new-launch pricing, and priority unit selection.
             </p>
             
             {/* Info Boxes */}
@@ -178,7 +187,7 @@ const Overview = ({ setIsOpen }) => {
             <img 
               src={overviewImage} 
               alt="Tata Orbis Overview" 
-              className="w-full h-auto rounded-xl shadow-2xl max-w-[550px] lg:max-w-none mx-auto object-cover"
+              className="w-full h-auto rounded-xl max-w-[550px] lg:max-w-none mx-auto object-cover"
             />
           </div>
         </div>
