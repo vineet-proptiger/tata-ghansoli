@@ -70,7 +70,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
             </p>
             
             {/* Priority EOI Highlight Box */}
-            <div className="w-full mt-4 mb-2 p-3 rounded-xl flex flex-col items-center justify-center border border-[#c9a65a]/40 bg-[#c9a65a]/10 backdrop-blur-sm shadow-[0_4px_15px_rgba(201,166,90,0.15)]">
+            <div className="w-full mt-4 mb-2 p-3 rounded-xl flex flex-col items-center justify-center border border-[#c9a65a]/50 bg-black/30 backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.3)]">
               <style>{`
                 @keyframes popupBlink {
                   0%, 75% { opacity: 1; text-shadow: 0 0 8px rgba(255,255,255,0.4); }
