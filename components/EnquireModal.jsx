@@ -71,11 +71,17 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
             
             {/* Priority EOI Highlight Box */}
             <div className="w-full mt-4 mb-2 p-3 rounded-xl flex flex-col items-center justify-center border border-[#c9a65a]/40 bg-[#c9a65a]/10 backdrop-blur-sm shadow-[0_4px_15px_rgba(201,166,90,0.15)]">
+              <style>{`
+                @keyframes popupBlink {
+                  0%, 75% { opacity: 1; text-shadow: 0 0 8px rgba(255,255,255,0.4); }
+                  76%, 100% { opacity: 0; text-shadow: none; }
+                }
+              `}</style>
               <span className="text-white font-semibold text-[13px] tracking-wide mb-1 flex items-center gap-1.5" style={{ fontFamily: F_JOST }}>
                 <span className="text-[15px]">💳</span> Priority EOI Amount
               </span>
               <span className="text-[#c9a65a] font-bold text-[17px] tracking-wider" style={{ fontFamily: F_JOST }}>
-                ₹3 Lakhs* <span className="text-white/80 font-normal text-[11px] tracking-normal ml-1">(2 & 3 BHK)</span>
+                <span style={{ animation: 'popupBlink 1.4s infinite' }}>₹3 Lakhs*</span> <span className="text-white/80 font-normal text-[11px] tracking-normal ml-1">(2 & 3 BHK)</span>
               </span>
             </div>
 
