@@ -27,7 +27,7 @@ const Footer = () => (
         </div>
         <p style={{ fontSize: '15px', color: '#fff', fontFamily: 'var(--font-poppins), sans-serif', lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
           data-aos="fade-in" data-aos-delay="100">
-          Tata Housing presents Tata Orbis, Navi Mumbai&apos;s premier luxury residential and commercial landmark in Ghansoli, offering luxury 2, 3 BHK &amp; Jodi residences across an integrated 47.5-acre green development. Thoughtfully curated with BEE 4-star approval, an iconic 3-level clubhouse, the luxurious Taj Hotel, and world-class leisure amenities — Tata Orbis is engineered for those who seek an elevated lifestyle.
+          Tata Ghansoli Navi Mumbai is developed by Tata Housing, one of India&apos;s most trusted and reputed real estate developers. With decades of experience in residential and township projects, Tata Housing has built a strong legacy of quality, innovation, and timely delivery. The developer is known for creating homes that combine modern design, functional layouts, and lifestyle convenience.
         </p>
         
         {/* RERA Block */}
