@@ -77,12 +77,17 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                   76%, 100% { opacity: 0; text-shadow: none; }
                 }
               `}</style>
-              <span className="text-white font-semibold text-[13px] tracking-wide mb-1 flex items-center gap-1.5" style={{ fontFamily: F_JOST }}>
-                <span className="text-[15px]">💳</span> Priority EOI Amount
+              <span className="text-white font-semibold text-[13px] tracking-wide mb-2 flex items-center gap-1.5" style={{ fontFamily: F_JOST }}>
+                <span className="text-[15px]">💳</span> Priority Allotment EOI Amount
               </span>
-              <span className="text-[#ffd700] font-bold text-[17px] tracking-wider" style={{ fontFamily: F_JOST }}>
-                <span style={{ animation: 'popupBlink 1.4s infinite' }}>₹3 Lakhs*</span> <span className="text-white/90 font-normal text-[11px] tracking-normal ml-1">(2 & 3 BHK)</span>
-              </span>
+              <div className="flex flex-col items-center gap-1.5 w-full">
+                <span className="text-[#ffd700] font-bold text-[16px] tracking-wider" style={{ fontFamily: F_JOST }}>
+                  <span className="text-white/90 font-normal text-[12px] tracking-normal mr-1">2 & 3 BHK:</span> <span style={{ animation: 'popupBlink 1.4s infinite' }}>₹3 Lakhs*</span>
+                </span>
+                <span className="text-[#ffd700] font-bold text-[16px] tracking-wider" style={{ fontFamily: F_JOST }}>
+                  <span className="text-white/90 font-normal text-[12px] tracking-normal mr-1">Jodi Residences:</span> <span style={{ animation: 'popupBlink 1.4s infinite' }}>₹5 Lakhs*</span>
+                </span>
+              </div>
             </div>
 
           </div>

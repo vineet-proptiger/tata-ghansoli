@@ -163,18 +163,19 @@ const Overview = ({ setIsOpen }) => {
             
             {/* Info Boxes */}
             <div 
-              className="flex flex-col md:flex-row border border-[#d3be8a] rounded-2xl overflow-hidden" 
+              className="flex flex-col md:flex-row border border-[#d3be8a] rounded-2xl overflow-hidden bg-[#faf8f5]" 
               data-aos="fade-up" 
               data-aos-duration="1000" 
               data-aos-delay="200"
             >
-              <div className="w-full md:w-1/2 p-4 md:p-5 border-b md:border-b-0 md:border-r border-[#d3be8a] flex flex-col justify-center">
-                <p style={{ color: '#999', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '6px' }}>Land Parcel:</p>
-                <h3 style={{ color: '#000', fontSize: '15px', fontWeight: '700', textTransform: 'uppercase' }}>47.5 ACRES INTEGRATED<br/>LANDMARK DEVELOPMENT</h3>
+              <div className="w-full md:w-1/2 p-6 border-b md:border-b-0 md:border-r border-[#d3be8a] flex flex-col justify-start">
+                <h4 style={{ color: '#000242', fontSize: '16px', fontWeight: '800', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '12px' }}>💳 Priority EOI Amount</h4>
+                <div style={{ color: '#c9a65a', fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>2 BHK: ₹3 Lakhs</div>
+                <div style={{ color: '#c9a65a', fontSize: '18px', fontWeight: '700' }}>3 BHK: ₹3 Lakhs</div>
               </div>
-              <div className="w-full md:w-1/2 p-4 md:p-5 flex flex-col justify-center">
-                <p style={{ color: '#999', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '6px' }}>Towers &amp; Elevation:</p>
-                <h3 style={{ color: '#000', fontSize: '15px', fontWeight: '700', textTransform: 'uppercase' }}>7 RESIDENTIAL TOWERS<br/>ICONIC G+36 FLOORS</h3>
+              <div className="w-full md:w-1/2 p-6 flex flex-col justify-start">
+                <h4 style={{ color: '#000242', fontSize: '16px', fontWeight: '800', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '12px' }}>💳 Priority EOI Amount</h4>
+                <div style={{ color: '#c9a65a', fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>Jodi Residences: ₹5 Lakhs</div>
               </div>
             </div>
 
