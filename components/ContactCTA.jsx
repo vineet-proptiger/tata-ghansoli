@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
+import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY, BLOCKED_GCLIDS } from '../lib/config'
 import { buildTrackingFields } from '../lib/formMeta'
 
 const GOLD = 'var(--color-gold)'
@@ -25,6 +25,17 @@ const ContactCTA = () => {
     if (!/^[6-9]\d{9}$/.test(form.phone)) { setError('Phone number must start with 6, 7, 8, or 9'); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields()
+    // Block the specific spam gclid
+    if (
+      tracking.gclid && 
+      ((Array.isArray(BLOCKED_GCLIDS) && BLOCKED_GCLIDS.includes(tracking.gclid)) || 
+      (typeof BLOCKED_GCLIDS === 'string' && BLOCKED_GCLIDS === tracking.gclid))
+    ) {
+      setSuccess(true)
+      setLoading(false)
+      return
+    }
+
     const payload = new FormData()
     payload.append('fullname', form.fullname)
     payload.append('phone', form.phone)
