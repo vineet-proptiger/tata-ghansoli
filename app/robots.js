@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://tatarealtyghansoli.co.in/sitemap.xml',
+    sitemap: 'https://tataorbisghansoliproject.co.in/sitemap.xml',
   }
 }

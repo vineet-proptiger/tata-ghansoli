@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://tatarealtyghansoli.co.in'
+  const baseUrl = 'https://tataorbisghansoliproject.co.in/'
   return [
     {
       url: baseUrl,

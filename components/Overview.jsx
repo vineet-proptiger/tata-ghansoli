@@ -170,8 +170,8 @@ const Overview = ({ setIsOpen }) => {
             >
               <div className="w-full md:w-1/2 p-6 border-b md:border-b-0 md:border-r border-[#d3be8a] flex flex-col justify-start">
                 <h4 style={{ color: '#000242', fontSize: '16px', fontWeight: '800', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '12px' }}>💳 Priority Allotment EOI Amount</h4>
-                <div style={{ color: '#c9a65a', fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>2 BHK: ₹3 Lakhs</div>
-                <div style={{ color: '#c9a65a', fontSize: '18px', fontWeight: '700' }}>3 BHK: ₹3 Lakhs</div>
+                <div style={{ color: '#c9a65a', fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>2 & 3 BHK: ₹3 Lakhs</div>
+                {/* <div style={{ color: '#c9a65a', fontSize: '18px', fontWeight: '700' }}>3 BHK: ₹3 Lakhs</div> */}
               </div>
               <div className="w-full md:w-1/2 p-6 flex flex-col justify-start">
                 <h4 style={{ color: '#000242', fontSize: '16px', fontWeight: '800', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '12px' }}>💳 Priority Allotment EOI Amount</h4>

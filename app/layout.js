@@ -42,19 +42,16 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://tatarealtyghansoli.co.in'),
+  metadataBase: new URL('https://tataorbisghansoliproject.co.in'),
   title: 'Tata Orbis | Luxury 2, 3 BHK & Jodi Homes in Ghansoli, Navi Mumbai',
   description: "Tata Orbis — A thoughtfully planned 47.5-acre landmark development in Ghansoli, Navi Mumbai by Tata Housing. Luxury 2 BHK, 3 BHK, and Jodi apartments in iconic G+36 towers.",
-  icons: {
-    icon: '/images/favicon/fav.webp',
-  },
   alternates: {
-    canonical: 'https://tatarealtyghansoli.co.in',
+    canonical: 'https://tataorbisghansoliproject.co.in/',
   },
   openGraph: {
     title: 'Tata Orbis | Luxury Integrated Development in Ghansoli',
     description: "Discover luxury 2, 3 BHK & Jodi apartments at Tata Orbis, an integrated 47.5-acre landmark development in Ghansoli, Navi Mumbai.",
-    url: 'https://tatarealtyghansoli.co.in',
+    url: 'https://tataorbisghansoliproject.co.in/',
     siteName: 'Tata Orbis',
     images: [
       {
@@ -73,6 +70,9 @@ export const metadata = {
     description: "A thoughtfully planned 47.5-acre landmark development in Ghansoli, Navi Mumbai by Tata Housing.",
     images: ['/projects/iris-tower.jpg'],
   },
+  icons: {
+    icon: '/images/favicon/fav.webp',
+  },
 }
 
 import SmoothScroll from '../components/SmoothScroll'
@@ -90,9 +90,9 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "RealEstateAgent",
               "name": "Tata Orbis Ghansoli",
-              "url": "https://tatarealtyghansoli.co.in",
-              "logo": "https://tatarealtyghansoli.co.in/projects/iris-tower.jpg",
-              "image": "https://tatarealtyghansoli.co.in/projects/iris-tower.jpg",
+              "url": "https://tataorbisghansoliproject.co.in/",
+              "logo": "https://tataorbisghansoliproject.co.in/projects/iris-tower.jpg",
+              "image": "https://tataorbisghansoliproject.co.in/projects/iris-tower.jpg",
               "description": "Tata Orbis, Navi Mumbai's premier luxury integrated development in Ghansoli offering 2, 3 BHK & Jodi luxury residences.",
               "address": {
                 "@type": "PostalAddress",
@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
               "telephone": "+919718344024",
               "priceRange": "₹ 1.99 Cr Onwards",
               "sameAs": [
-                "https://tatarealtyghansoli.co.in"
+                "https://tataorbisghansoliproject.co.in"
               ]
             })
           }}

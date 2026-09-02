@@ -25,18 +25,51 @@ const ContactCTA = () => {
     if (!/^[6-9]\d{9}$/.test(form.phone)) { setError('Phone number must start with 6, 7, 8, or 9'); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields()
-    // Block the specific spam gclid
-    if (
-      tracking.gclid && 
-      ((Array.isArray(BLOCKED_GCLIDS) && BLOCKED_GCLIDS.includes(tracking.gclid)) || 
-      (typeof BLOCKED_GCLIDS === 'string' && BLOCKED_GCLIDS === tracking.gclid))
-    ) {
-      setSuccess(true)
-      setLoading(false)
-      return
-    }
 
-    const payload = new FormData()
+
+    
+    // --- GCLID-SPECIFIC BROWSER LIMIT (Max 3 submissions per GCLID / 30 days) ---
+    let currentCount = 0;
+    let safeGclid = '';
+    
+    if (tracking.gclid) {
+      safeGclid = tracking.gclid; // Use full GCLID for cookie name to prevent collision
+      
+      const cookieRegex = new RegExp(`(?:^|; )lead_trk_${PROJECT_ID}_${safeGclid}=([^;]*)`);
+      const cookieMatch = document.cookie.match(cookieRegex);
+      const cookieCount = cookieMatch ? parseInt(cookieMatch[1], 10) : 0;
+      
+      let lsCount = 0;
+      const lsKey = `lead_trk_data_${PROJECT_ID}`;
+      const lsDataStr = localStorage.getItem(lsKey);
+      
+      if (lsDataStr) {
+        try {
+          const lsData = JSON.parse(lsDataStr);
+          const gclidRecord = lsData[tracking.gclid];
+          
+          if (gclidRecord) {
+            if (Date.now() - gclidRecord.firstSeen < 2592000000) { // 30 days
+              lsCount = gclidRecord.count || 0;
+            } else {
+              delete lsData[tracking.gclid];
+              localStorage.setItem(lsKey, JSON.stringify(lsData));
+            }
+          }
+        } catch (e) {}
+      }
+      
+      currentCount = Math.max(cookieCount, lsCount);
+      
+      if (currentCount >= 3) {
+        setSuccess(true);
+        setLoading(false);
+        return;
+      }
+    }
+    // -------------------------------------------------------------
+
+const payload = new FormData()
     payload.append('fullname', form.fullname)
     payload.append('phone', form.phone)
     payload.append('email', form.email || '')
@@ -50,7 +83,28 @@ const ContactCTA = () => {
     try {
       const res = await fetch(API_ENDPOINT, { method: 'POST', body: payload })
       const data = await res.json()
-      if (data.status) {
+            if (data.status) {
+        // --- SAVE GCLID TRACKING ON SUCCESS ---
+        if (tracking.gclid) {
+          const newCount = currentCount + 1;
+          if (typeof document !== 'undefined') document.cookie = `lead_trk_${PROJECT_ID}_${safeGclid}=${newCount}; max-age=2592000; path=/`;
+          
+          if (typeof localStorage !== 'undefined') {
+            const lsKey = `lead_trk_data_${PROJECT_ID}`;
+            let lsData = {};
+            try {
+              const existing = localStorage.getItem(lsKey);
+              if (existing) lsData = JSON.parse(existing);
+            } catch(e) {}
+            
+            lsData[tracking.gclid] = {
+              count: newCount,
+              firstSeen: (lsData[tracking.gclid] && lsData[tracking.gclid].firstSeen) ? lsData[tracking.gclid].firstSeen : Date.now()
+            };
+            try { localStorage.setItem(lsKey, JSON.stringify(lsData)); } catch(e) {}
+          }
+        }
+        // --------------------------------------
         // if (typeof window !== 'undefined') localStorage.setItem('_lsub_done', '1')
         setSuccess(true)
         if (typeof window !== 'undefined') {
