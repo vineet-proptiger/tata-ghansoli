@@ -122,7 +122,7 @@ export default function Home() {
       <div className="fixed bottom-0 left-0 right-0 z-[100] flex shadow-[0_-4px_15px_rgba(0,0,0,0.1)] md:hidden">
         {/* WhatsApp - Left */}
         <a 
-          href="https://wa.me/919718344024?text=Hi%2C%20I%20am%20interested%20in%20Tata%20Ghansoli" 
+          href="https://wa.me/919560582493?text=Hi%2C%20I%20am%20interested%20in%20Tata%20Ghansoli" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="flex-1 bg-[#25D366] text-white py-2.5 flex flex-col items-center justify-center gap-1 hover:bg-[#20bd5a] transition-colors"
