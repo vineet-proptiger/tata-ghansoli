@@ -442,7 +442,7 @@ const Hero = ({ setIsOpen }) => {
             '47.5 Acres Landmark Integrated Development',
             'Luxury 2, 3 BHK & Jodi In G+36 Floors Towers',
             'BEE 4-Star Approved Residential & Commercial',
-            'Featuring A 3-Level Clubhouse & Taj Hotel',
+            'Proposed Taj Hotel Within Township',
             'Olympic-Size Pool & Grand Entrance Lobby'
           ].map((text, i) => (
           <div key={i} className="hero-bullet-item" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
