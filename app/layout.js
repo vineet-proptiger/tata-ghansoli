@@ -49,7 +49,7 @@ export const metadata = {
     canonical: 'https://tataorbisghansoliproject.co.in/',
   },
   openGraph: {
-    title: 'Tata Orbis | Luxury Integrated Development in Ghansoli',
+    title: 'Tata Ghansoli Project | Luxury Integrated Development in Ghansoli',
     description: "Discover luxury 2, 3 BHK & Jodi apartments at Tata Orbis, an integrated 47.5-acre landmark development in Ghansoli, Navi Mumbai.",
     url: 'https://tataorbisghansoliproject.co.in/',
     siteName: 'Tata Orbis',
@@ -66,7 +66,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tata Orbis | Luxury 2, 3 BHK & Jodi Homes in Ghansoli',
+    title: 'Tata Ghansoli Project | Luxury 2, 3 BHK & Jodi Homes in Ghansoli',
     description: "A thoughtfully planned 47.5-acre landmark development in Ghansoli, Navi Mumbai by Tata Housing.",
     images: ['/projects/iris-tower.jpg'],
   },
@@ -89,11 +89,11 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "RealEstateAgent",
-              "name": "Tata Orbis Ghansoli",
+              "name": "Tata Ghansoli Project",
               "url": "https://tataorbisghansoliproject.co.in/",
               "logo": "https://tataorbisghansoliproject.co.in/projects/iris-tower.jpg",
               "image": "https://tataorbisghansoliproject.co.in/projects/iris-tower.jpg",
-              "description": "Tata Orbis, Navi Mumbai's premier luxury integrated development in Ghansoli offering 2, 3 BHK & Jodi luxury residences.",
+              "description": "Tata Ghansoli Project, Navi Mumbai's premier luxury integrated development in Ghansoli offering 2, 3 BHK & Jodi luxury residences.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Ghansoli",
