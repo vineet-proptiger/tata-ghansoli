@@ -43,7 +43,7 @@ const nephilm = localFont({
 
 export const metadata = {
   metadataBase: new URL('https://tataorbisghansoliproject.co.in'),
-  title: 'Tata Orbis | Luxury 2, 3 BHK & Jodi Homes in Ghansoli, Navi Mumbai',
+  title: 'Tata Ghansoli Project | Luxury 2, 3 BHK & Jodi Homes in Ghansoli, Navi Mumbai',
   description: "Tata Orbis — A thoughtfully planned 47.5-acre landmark development in Ghansoli, Navi Mumbai by Tata Housing. Luxury 2 BHK, 3 BHK, and Jodi apartments in iconic G+36 towers.",
   alternates: {
     canonical: 'https://tataorbisghansoliproject.co.in/',
