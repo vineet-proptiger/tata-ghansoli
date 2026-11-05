@@ -157,27 +157,9 @@ const Overview = ({ setIsOpen }) => {
               Exceptionally designed amenities include a 3-level clubhouse, landscaped gardens, Olympic-size swimming pool, children&apos;s play area, gymnasium, indoor games area, multipurpose court, drive pathway, grand entrance lobby, ample parking, high-speed elevators, and more.
             </p>
             
-            <p className="boldp" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="160" style={{ fontSize: '16px', fontFamily: '"Poppins", sans-serif', fontWeight: '700', color: '#333', marginBottom: '40px' }}>
+            <p className="boldp" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="160" style={{ fontSize: '16px', fontFamily: '"Poppins", sans-serif', fontWeight: '700', color: '#333' }}>
               TATA Ghansoli New Launch, Navi Mumbai — Register Your Interest Today to access exclusive offers, new-launch pricing, and priority unit selection.
             </p>
-            
-            {/* Info Boxes */}
-            <div 
-              className="flex flex-col md:flex-row border border-[#d3be8a] rounded-2xl overflow-hidden bg-[#faf8f5]" 
-              data-aos="fade-up" 
-              data-aos-duration="1000" 
-              data-aos-delay="200"
-            >
-              <div className="w-full md:w-1/2 p-6 border-b md:border-b-0 md:border-r border-[#d3be8a] flex flex-col justify-start">
-                <h4 style={{ color: '#000242', fontSize: '16px', fontWeight: '800', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '12px' }}>💳 Priority Allotment EOI Amount</h4>
-                <div style={{ color: '#c9a65a', fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>2 & 3 BHK: ₹3 Lakhs</div>
-                {/* <div style={{ color: '#c9a65a', fontSize: '18px', fontWeight: '700' }}>3 BHK: ₹3 Lakhs</div> */}
-              </div>
-              <div className="w-full md:w-1/2 p-6 flex flex-col justify-start">
-                <h4 style={{ color: '#000242', fontSize: '16px', fontWeight: '800', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '12px' }}>💳 Priority Allotment EOI Amount</h4>
-                <div style={{ color: '#c9a65a', fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>Jodi Residences: ₹5 Lakhs</div>
-              </div>
-            </div>
 
           </div>
         </div>
