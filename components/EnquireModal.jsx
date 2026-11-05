@@ -69,25 +69,11 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
               Please enter your details to know more
             </p>
             
-            {/* Priority EOI Highlight Box */}
-            <div className="w-full mt-4 mb-2 p-3 rounded-xl flex flex-col items-center justify-center border border-red-500/60 bg-red-800/40 backdrop-blur-sm shadow-[0_4px_15px_rgba(220,38,38,0.25)]">
-              <style>{`
-                @keyframes popupBlink {
-                  0%, 75% { opacity: 1; text-shadow: 0 0 8px rgba(255,255,255,0.4); }
-                  76%, 100% { opacity: 0; text-shadow: none; }
-                }
-              `}</style>
-              <div className="text-white font-semibold text-[13px] tracking-wide mb-2 text-center px-2" style={{ fontFamily: F_JOST, lineHeight: '1.4' }}>
-                <span className="text-[15px] mr-1.5">💳</span>Priority Allotment EOI Amount
-              </div>
-              <div className="flex flex-col items-center gap-1.5 w-full">
-                <span className="text-[#ffd700] font-bold text-[16px] tracking-wider" style={{ fontFamily: F_JOST }}>
-                  <span className="text-white/90 font-normal text-[12px] tracking-normal mr-1">2 & 3 BHK:</span> <span style={{ animation: 'popupBlink 1.4s infinite' }}>₹3 Lakhs*</span>
-                </span>
-                <span className="text-[#ffd700] font-bold text-[16px] tracking-wider" style={{ fontFamily: F_JOST }}>
-                  <span className="text-white/90 font-normal text-[12px] tracking-normal mr-1">Jodi Residences:</span> <span style={{ animation: 'popupBlink 1.4s infinite' }}>₹5 Lakhs*</span>
-                </span>
-              </div>
+            {/* Priority Highlight Box */}
+            <div className="w-full mt-4 mb-2 p-2.5 rounded-xl flex items-center justify-center border border-red-500/60 bg-red-800/40 backdrop-blur-sm shadow-[0_4px_15px_rgba(220,38,38,0.25)]">
+              <span className="text-[#ffd700] font-bold text-[14px] sm:text-[15px] tracking-wide text-center" style={{ fontFamily: F_JOST }}>
+                Book Units with Priority Allotment
+              </span>
             </div>
 
           </div>

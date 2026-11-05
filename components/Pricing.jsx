@@ -8,7 +8,7 @@ const units = [
   {
     type: "2 BHK",
     subtitle: "RESIDENCES",
-    size: "On Request",
+    carpetArea: "750 SqFt",
     price: "₹ 1.99 Cr*",
     btnText: "GET DETAILS",
     features: [
@@ -36,7 +36,7 @@ const units = [
   {
     type: "3 BHK",
     subtitle: "RESIDENCES",
-    size: "On Request",
+    carpetArea: "970-1155 SqFt",
     price: "Ask For Price",
     btnText: "GET DETAILS",
     features: [
@@ -120,8 +120,8 @@ const Pricing = ({ setIsOpen }) => {
                   {unit.type} <br /> 
                   <span className="text-[14px] font-semibold">{unit.subtitle}</span>
                 </h3>
-                <p className="text-[11px] font-bold tracking-widest text-gray-500 relative z-10 uppercase mt-1" style={{ fontFamily: F_SANS }}>
-                  SIZE: <span className="text-gray-700 capitalize font-medium">{unit.size}</span>
+                <p className="text-[11px] font-bold tracking-wider text-gray-500 relative z-10 uppercase mt-1" style={{ fontFamily: F_SANS }}>
+                  CARPET AREA: <span className="text-gray-700 font-medium normal-case">{unit.carpetArea}</span>
                 </p>
               </div>
 
